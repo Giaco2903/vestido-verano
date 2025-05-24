@@ -6,218 +6,223 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tu Verano de Estilo: Secretos y Vestidos que Conquistan</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.9;
-            margin: 50px;
-            background-color: #f9f9f9;
-            color: #333;
-        }
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.9;
+        margin: 50px;
+        background-color: #f9f9f9;
+        color: #333;
+    }
 
-        h1,
-        h3 {
-            color: #2c3e50;
-            text-align: center;
-        }
+    header h1,
+    h3 {
+        color: #2c3e50;
+        text-align: center;
+    }
 
-        h1 {
-            font-size: 3.2em;
-            margin-bottom: 0.9em;
-            font-weight: 700;
+    header p {
+        text-align: left; /* Alineación a la izquierda para la introducción */
+        color: #555;
+        margin-bottom: 1.6em;
+    }
+
+    header h1 {
+        font-size: 3.2em;
+        margin-bottom: 0.9em;
+        font-weight: 700;
+    }
+
+    h2 {
+        font-size: 2.4em;
+        margin-top: 1.8em;
+        margin-bottom: 1.2em;
+        font-weight: 600;
+        color: #f08080;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1.8em;
+        margin-top: 1.2em;
+        margin-bottom: 1em;
+        font-weight: 500;
+    }
+
+    p {
+        margin-bottom: 1.6em;
+        text-align: justify;
+        color: #555;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+    }
+
+    li {
+        margin-bottom: 0.9em;
+        color: #555;
+        text-align: left; /* Alineación a la izquierda para las listas */
+    }
+
+    .product-link {
+        display: block;
+        width: 85%;
+        max-width: 400px;
+        margin: 2em auto;
+        padding: 18px 30px;
+        background-color: #3498db;
+        color: white;
+        text-decoration: none;
+        border-radius: 35px;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 1.3px;
+        box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease;
+    }
+
+    .product-link:hover {
+        background-color: #2980b9;
+    }
+
+    .trend {
+        font-style: italic;
+        color: #777;
+    }
+
+    .summer-secrets {
+        margin-top: 2.5em;
+        padding: 25px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .style-inspiration {
+        margin-top: 2.5em;
+        padding: 25px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .style-inspiration h2 {
+        text-align: left;
+        color: #f08080;
+    }
+
+    .style-inspiration p {
+        text-align: left;
+    }
+
+    .style-inspiration ul {
+        text-align: left;
+    }
+
+    .style-inspiration li {
+        margin-bottom: 0.6em;
+    }
+
+    .testimonial {
+        margin-top: 1.5em;
+        padding: 15px;
+        background-color: #fdfdfd;
+        border-left: 5px solid #f08080;
+        border-radius: 5px;
+        font-style: italic;
+        color: #666;
+        margin-bottom: 1em;
+    }
+
+    .testimonial cite {
+        display: block;
+        text-align: right;
+        color: #777;
+        font-style: normal;
+        font-size: 0.9em;
+        margin-top: 0.5em;
+    }
+
+    .combine-with {
+        margin-top: 1em;
+        color: #555;
+        text-align: left; /* Alineación a la izquierda para las sugerencias */
+    }
+
+    .combine-with strong {
+        font-weight: bold;
+        color: #2c3e50;
+    }
+
+    .client-looks {
+        margin-top: 2.5em;
+        padding: 25px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+        text-align: center;
+    }
+
+    .client-look {
+        margin-bottom: 1.5em;
+        padding: 15px;
+        border: 1px solid #eee;
+        border-radius: 5px;
+    }
+
+    .client-look h4 {
+        color: #2c3e50;
+        margin-bottom: 0.5em;
+        font-size: 1.1em;
+    }
+
+    .dress-description {
+        margin-bottom: 1em;
+    }
+
+    .dress-description p {
+        margin-bottom: 0.8em;
+        text-align: left; /* Alineación a la izquierda para la descripción del vestido */
+    }
+
+    .dress-suggestion {
+        color: #555;
+        font-size: 0.95em;
+        margin-top: 1em;
+        text-align: center;
+    }
+
+    .dress-suggestion strong {
+        color: #2c3e50;
+        font-weight: bold;
+    }
+
+    .dress-image {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto 1em;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Media query para pantallas más pequeñas */
+    @media (max-width: 600px) {
+        header h1 {
+            font-size: 2.7em;
         }
 
         h2 {
-            font-size: 2.4em;
-            margin-top: 1.8em;
-            margin-bottom: 1.2em;
-            font-weight: 600;
-            color: #f08080;
-            /* Rosa palo para los títulos secundarios */
-            text-align: center;
-            /* Asegurarse de que sigan centrados */
+            font-size: 2em;
         }
 
         h3 {
-            font-size: 1.8em;
-            margin-top: 1.2em;
-            margin-bottom: 1em;
-            font-weight: 500;
+            font-size: 1.6em;
         }
-
-        p {
-            margin-bottom: 1.6em;
-            text-align: justify;
-            color: #555;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-            text-align: center;
-        }
-
-        li {
-            margin-bottom: 0.9em;
-            color: #555;
-        }
-
-        .product-link {
-            display: block;
-            width: 85%;
-            max-width: 400px;
-            margin: 2em auto;
-            padding: 18px 30px;
-            background-color: #3498db;
-            color: white;
-            text-decoration: none;
-            border-radius: 35px;
-            text-align: center;
-            font-weight: bold;
-            letter-spacing: 1.3px;
-            box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s ease;
-        }
-
-        .product-link:hover {
-            background-color: #2980b9;
-        }
-
-        .trend {
-            font-style: italic;
-            color: #777;
-        }
-
-        .summer-secrets {
-            margin-top: 2.5em;
-            padding: 25px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
-        }
-
-        .style-inspiration {
-            margin-top: 2.5em;
-            padding: 25px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
-        }
-
-        .style-inspiration h2 {
-            text-align: left;
-            color: #f08080;
-        }
-
-        .style-inspiration p {
-            text-align: left;
-        }
-
-        .style-inspiration ul {
-            text-align: left;
-        }
-
-        .style-inspiration li {
-            margin-bottom: 0.6em;
-        }
-
-        .testimonial {
-            margin-top: 1.5em;
-            padding: 15px;
-            background-color: #fdfdfd;
-            border-left: 5px solid #f08080;
-            border-radius: 5px;
-            font-style: italic;
-            color: #666;
-            margin-bottom: 1em;
-        }
-
-        .testimonial cite {
-            display: block;
-            text-align: right;
-            color: #777;
-            font-style: normal;
-            font-size: 0.9em;
-            margin-top: 0.5em;
-        }
-
-        .combine-with {
-            margin-top: 1em;
-            color: #555;
-            text-align: center;
-        }
-
-        .combine-with strong {
-            font-weight: bold;
-            color: #2c3e50;
-        }
-
-        .client-looks {
-            margin-top: 2.5em;
-            padding: 25px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
-            text-align: center;
-        }
-
-        .client-look {
-            margin-bottom: 1.5em;
-            padding: 15px;
-            border: 1px solid #eee;
-            border-radius: 5px;
-        }
-
-        .client-look h4 {
-            color: #2c3e50;
-            margin-bottom: 0.5em;
-            font-size: 1.1em;
-        }
-
-        .dress-description {
-            margin-bottom: 1em;
-        }
-
-        .dress-description p {
-            margin-bottom: 0.8em;
-            text-align: justify;
-        }
-
-        .dress-suggestion {
-            color: #555;
-            font-size: 0.95em;
-            margin-top: 1em;
-            text-align: center;
-        }
-
-        .dress-suggestion strong {
-            color: #2c3e50;
-            font-weight: bold;
-        }
-
-        .dress-image {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto 1em;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-        }
-
-        /* Media query para pantallas más pequeñas */
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 2.7em;
-            }
-
-            h2 {
-                font-size: 2em;
-            }
-
-            h3 {
-                font-size: 1.6em;
-            }
-        }
-    </style>
+    }
+</style>
 </head>
 
 <body>
@@ -350,13 +355,18 @@
                 </div>
             </div>
             <section class="style-inspiration">
-                <h2>Inspira tu Look de Verano: Más Ideas para un Estilo Radiante</h2>
-                <p>¿Quieres llevar tus vestidos de verano al siguiente nivel? Aquí tienes algunas ideas extra para combinar
-                    colores y accesorios:</p>
-                <ul>
-                    <li><strong>Bloque de color vibrante:</strong> Combina un maxi bohemio estampado con un bolso de un color
-                        sólido que resalte uno de los tonos del estampado.</li>
-                    <li><strong>Toque metálico:</strong> Un vestido midi chic en un tono pastel se ve espectacular con sandalias y
-                        joyas doradas o plateadas.</li>
-                    <li><strong>Estilo monocromático:</strong> Un mini atrevido en un color llamativo puede combinarse con
-                        accesorios en diferentes tonalidades del mismo color para
+        <h2>Inspira tu Look de Verano: Más Ideas para un Estilo Radiante</h2>
+        <p>¿Quieres llevar tus vestidos de verano al siguiente nivel? Aquí tienes algunas ideas extra para combinar
+            colores y accesorios:</p>
+        <ul>
+            <li><strong>Bloque de color vibrante:</strong> Combina un maxi bohemio estampado con un bolso de un color
+                sólido que resalte uno de los tonos del estampado.</li>
+            <li><strong>Toque metálico:</strong> Un vestido midi chic en un tono pastel se ve espectacular con sandalias y
+                joyas doradas o plateadas.</li>
+            <li><strong>Estilo monocromático:</strong> Un mini atrevido en un color llamativo puede combinarse con
+                accesorios en diferentes tonalidades del mismo color para un look moderno y sofisticado.</li>
+            <li><strong>Accesorios naturales:</strong> Un vestido de lino fresco queda genial con complementos de madera,
+                rafia o cuero natural para un estilo relajado y elegante.</li>
+        </ul>
+        <p>¡Experimenta y encuentra las combinaciones que mejor expresen tu estilo este verano!</p>
+    </section>
