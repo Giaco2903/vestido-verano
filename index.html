@@ -6,116 +6,151 @@
     <title>Tu Verano de Estilo: Vestidos Exclusivos</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Playfair Display', serif; /* Una fuente más elegante */
             line-height: 1.7;
             margin: 0;
             background-color: #f8f8f8;
             color: #333;
         }
 
-        /* Encabezado */
-        .hero-image {
-            background-image: url('img/hero_summer.jpg'); /* Reemplaza con tu imagen */
+        /* Encabezado Hero */
+        .hero-section {
+            background-image: url('img/hero_summer_v2.jpg'); /* Otra imagen de cabecera */
             background-size: cover;
             background-position: center;
             color: white;
             text-align: center;
-            padding: 150px 20px;
+            padding: 200px 20px;
+            position: relative;
         }
 
-        .hero-image h1 {
-            font-size: 3.5em;
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3); /* Overlay oscuro */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-overlay h1 {
+            font-size: 4em;
             font-weight: bold;
             margin-bottom: 15px;
-            letter-spacing: 1.5px;
+            letter-spacing: 1.8px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
         }
 
-        .hero-image p {
-            font-size: 1.2em;
+        .hero-overlay p {
+            font-size: 1.3em;
             margin-bottom: 30px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
         }
 
-        /* Tendencias */
-        .trends-section {
-            padding: 40px 20px;
+        /* Sección de Tendencias Destacadas */
+        .featured-trends {
+            padding: 60px 20px;
             background-color: #fff;
             text-align: center;
             border-bottom: 1px solid #eee;
         }
 
-        .trends-section h2 {
-            font-size: 2.2em;
-            color: #f08080;
-            margin-bottom: 20px;
-        }
-
-        .trends-list {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-        }
-
-        .trends-list li {
-            font-size: 1.1em;
-            color: #555;
-        }
-
-        /* Selección de Vestidos */
-        .dresses-section {
-            padding: 50px 20px;
-            background-color: #fdfdfd;
-            text-align: center;
-        }
-
-        .dresses-section h2 {
-            font-size: 2.2em;
-            color: #f08080;
+        .featured-trends h2 {
+            font-size: 2.5em;
+            color: #e91e63; /* Un color más de moda */
             margin-bottom: 30px;
         }
 
-        .dresses-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-            margin-top: 30px;
-            padding: 0 20px;
+        .trend-items {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
-        .dress-item {
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-            padding: 20px;
+        .trend-item {
+            flex: 1 1 200px;
             text-align: center;
+            margin-bottom: 30px;
         }
 
-        .dress-item img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 6px;
-            margin-bottom: 15px;
-        }
-
-        .dress-item h3 {
-            font-size: 1.3em;
+        .trend-item h3 {
+            font-size: 1.4em;
             color: #2c3e50;
             margin-bottom: 10px;
         }
 
-        .dress-item p {
-            font-size: 1em;
+        .trend-item p {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        /* Nuestra Selección de Vestidos (Grid Mejorado) */
+        .exclusive-selection {
+            padding: 70px 20px;
+            background-color: #fdfdfd;
+            text-align: center;
+        }
+
+        .exclusive-selection h2 {
+            font-size: 2.5em;
+            color: #e91e63;
+            margin-bottom: 40px;
+        }
+
+        .dresses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .dress-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        .dress-card img {
+            width: 100%;
+            height: auto;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            display: block;
+        }
+
+        .dress-details {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .dress-details h3 {
+            font-size: 1.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .dress-details p {
+            font-size: 1.1em;
             color: #555;
             margin-bottom: 15px;
             text-align: left;
         }
 
-        .product-link {
+        .product-link-button {
             display: inline-block;
-            padding: 12px 20px;
-            background-color: #3498db;
+            padding: 12px 25px;
+            background-color: #e91e63;
             color: white;
             text-decoration: none;
             border-radius: 25px;
@@ -124,37 +159,44 @@
             transition: background-color 0.3s ease;
         }
 
-        .product-link:hover {
-            background-color: #2980b9;
+        .product-link-button:hover {
+            background-color: #c2185b;
         }
 
-        /* Inspira tu Look */
-        .inspiration-section {
-            padding: 50px 20px;
+        /* Sección de Inspiración de Estilo (Más Visual) */
+        .style-inspiration-section {
+            padding: 70px 20px;
             background-color: #fff;
             border-top: 1px solid #eee;
         }
 
-        .inspiration-section h2 {
-            font-size: 2.2em;
-            color: #f08080;
+        .style-inspiration-section h2 {
+            font-size: 2.5em;
+            color: #e91e63;
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
 
-        .inspiration-list {
-            list-style: none;
-            padding: 0;
+        .inspiration-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
 
         .inspiration-item {
-            margin-bottom: 20px;
+            background-color: #fdfdfd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            padding: 25px;
         }
 
         .inspiration-item h3 {
-            font-size: 1.5em;
+            font-size: 1.6em;
             color: #2c3e50;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
 
         .inspiration-item p {
@@ -163,105 +205,139 @@
             line-height: 1.8;
         }
 
-        /* Pie de página */
+        /* Pie de página Elaborado */
         footer {
             text-align: center;
-            padding: 30px 20px;
-            background-color: #333;
-            color: #fff;
+            padding: 50px 20px;
+            background-color: #222;
+            color: #eee;
             font-size: 0.9em;
-            margin-top: 50px;
+            margin-top: 60px;
         }
 
         footer p {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
 
-        .social-links a {
-            color: #fff;
-            margin: 0 10px;
-            font-size: 1.2em;
+        .footer-nav a {
+            color: #eee;
+            margin: 0 15px;
             text-decoration: none;
         }
 
-        .social-links a:hover {
+        .footer-nav a:hover {
             color: #ddd;
         }
+
+        /* Estilos Generales */
+        a {
+            color: #e91e63;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #c2185b;
+        }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="hero-image">
-        <h1>Encuentra tu Look de Verano Perfecto</h1>
-        <p>Descubre nuestra exclusiva colección de vestidos que te harán brillar esta temporada.</p>
+    <div class="hero-section">
+        <div class="hero-overlay">
+            <h1>Verano de Estilo Exclusivo</h1>
+            <p>Descubre la colección de vestidos que definirá tu temporada.</p>
+        </div>
     </div>
 
-    <section class="trends-section">
-        <h2>Tendencias de Verano 2025</h2>
-        <ul class="trends-list">
-            <li>El poder del lino y algodón orgánico</li>
-            <li>Colorterapia en tonos vibrantes y pastel</li>
-            <li>Detalles de volantes y bordados</li>
-            <li>Siluetas fluidas y maxi largos</li>
+    <section class="featured-trends">
+        <h2>Tendencias Destacadas para tu Verano</h2>
+        <ul class="trend-items">
+            <li class="trend-item">
+                <h3>Tejidos Naturales</h3>
+                <p>Lino fresco y algodón orgánico para una comodidad elegante.</p>
+            </li>
+            <li class="trend-item">
+                <h3>Colores Vibrantes y Pastel</h3>
+                <p>Desde tonos energéticos hasta la dulzura de los pasteles.</p>
+            </li>
+            <li class="trend-item">
+                <h3>Detalles Únicos</h3>
+                <p>Volantes, bordados y escotes que marcan la diferencia.</p>
+            </li>
+            <li class="trend-item">
+                <h3>Siluetas Fluidas</h3>
+                <p>Vestidos que se mueven contigo, desde el día hasta la noche.</p>
+            </li>
         </ul>
     </section>
 
-    <section class="dresses-section">
-        <h2>Nuestra Selección de Vestidos</h2>
+    <section class="exclusive-selection">
+        <h2>Nuestra Selección Exclusiva de Vestidos</h2>
         <div class="dresses-grid">
-            <div class="dress-item">
-                <img src="519rdGAvk-S._AC_SY606_.jpg" alt="Maxi Bohemio" style="max-width: 100%;">
-                <h3>Maxi Bohemio</h3>
-                <p>Siente la libertad con este maxi vestido de estampado fluido, ideal para un look relajado y elegante en tus paseos de verano.</p>
-                <a href="https://amzn.to/4j9eZTL" class="product-link" target="_blank" rel="noopener noreferrer">Ver más</a>
+            <div class="dress-card">
+                <img src="519rdGAvk-S._AC_SY606_.jpg" alt="Maxi Bohemio">
+                <div class="dress-details">
+                    <h3>Maxi Bohemio</h3>
+                    <p>Un espíritu libre con un toque de sofisticación. Perfecto para atardeceres y festivales.</p>
+                    <a href="https://amzn.to/4j9eZTL" class="product-link-button" target="_blank" rel="noopener noreferrer">Ver más</a>
+                </div>
             </div>
-            <div class="dress-item">
-                <img src="61LqzzSOs3L._AC_SX679_.jpg" alt="Midi Chic" style="max-width: 100%;">
-                <h3>Midi Chic</h3>
-                <p>La elegancia se une a la frescura en este vestido midi de corte favorecedor, perfecto para cualquier ocasión, desde un brunch hasta una cena.</p>
-                <a href="https://amzn.to/4kACMNN" class="product-link" target="_blank" rel="noopener noreferrer">Ver más</a>
+            <div class="dress-card">
+                <img src="61LqzzSOs3L._AC_SX679_.jpg" alt="Midi Chic">
+                <div class="dress-details">
+                    <h3>Midi Chic</h3>
+                    <p>Elegancia y versatilidad para cualquier ocasión, desde el día hasta la noche.</p>
+                    <a href="https://amzn.to/4kACMNN" class="product-link-button" target="_blank" rel="noopener noreferrer">Ver más</a>
+                </div>
             </div>
-            <div class="dress-item">
-                <img src="7176DKvivsL._AC_SX466_.jpg" alt="Mini Atrevido" style="max-width: 100%;">
-                <h3>Mini Atrevido</h3>
-                <p>Irradia juventud y confianza con este mini vestido estampado, ideal para disfrutar del sol y las noches de verano con mucho estilo.</p>
-                <a href="https://amzn.to/4jqzT16" class="product-link" target="_blank" rel="noopener noreferrer">Ver más</a>
+            <div class="dress-card">
+                <img src="7176DKvivsL._AC_SX466_.jpg" alt="Mini Atrevido">
+                <div class="dress-details">
+                    <h3>Mini Atrevido</h3>
+                    <p>Irradia juventud y confianza con estampados vibrantes y detalles juguetones.</p>
+                    <a href="https://amzn.to/4jqzT16" class="product-link-button" target="_blank" rel="noopener noreferrer">Ver más</a>
+                </div>
             </div>
-            <div class="dress-item">
-                <img src="71THeT+KJHL._AC_SX466_.jpg" alt="Vestido de Lino Fresco" style="max-width: 100%;">
-                <h3>Lino Fresco</h3>
-                <p>Descubre la comodidad sofisticada con este vestido de lino, perfecto para mantenerte fresca y elegante durante los días cálidos.</p>
-                <a href="https://amzn.to/43enfgQ" class="product-link" target="_blank" rel="noopener noreferrer">Ver más</a>
+            <div class="dress-card">
+                <img src="71THeT+KJHL._AC_SX466_.jpg" alt="Vestido de Lino Fresco">
+                <div class="dress-details">
+                    <h3>Lino Fresco</h3>
+                    <p>Comodidad y estilo natural para los días cálidos. Un básico imprescindible.</p>
+                    <a href="https://amzn.to/43enfgQ" class="product-link-button" target="_blank" rel="noopener noreferrer">Ver más</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="inspiration-section">
-        <h2>Inspira tu Look de Verano</h2>
-        <div class="inspiration-item">
-            <h3>Combina tu Maxi Bohemio</h3>
-            <p>Para un look relajado de día, úsalo con sandalias planas y un sombrero de ala ancha. Para la noche, añade unas alpargatas de cuña y joyería sutil.</p>
-        </div>
-        <div class="inspiration-item">
-            <h3>Estiliza tu Midi Chic</h3>
-            <p>Para un evento formal, combínalo con tacones y un clutch elegante. Para un look más casual, opta por bailarinas o sandalias bajas y un bolso de mano.</p>
-        </div>
-        <div class="inspiration-item">
-            <h3>Potencia tu Mini Atrevido</h3>
-            <p>Llévalo con zapatillas deportivas para un estilo urbano y moderno, o con sandalias de tacón para una noche de fiesta inolvidable.</p>
-        </div>
-        <div class="inspiration-item">
-            <h3>Realza tu Vestido de Lino</h3>
-            <p>Combínalo con accesorios de materiales naturales como el mimbre o la madera, y sandalias de cuero para un look veraniego y chic.</p>
+    <section class="style-inspiration-section">
+        <h2>Inspira tu Estilo de Verano</h2>
+        <div class="inspiration-grid">
+            <div class="inspiration-item">
+                <h3>Maxi Bohemio</h3>
+                <p>Combínalo con sandalias de cuero y un sombrero de ala ancha para un look de día relajado, o con alpargatas de cuña para la noche.</p>
+            </div>
+            <div class="inspiration-item">
+                <h3>Midi Chic</h3>
+                <p>Estilízalo con tacones y un bolso elegante para eventos, o con bailarinas para un día casual con amigas.</p>
+            </div>
+            <div class="inspiration-item">
+                <h3>Mini Atrevido</h3>
+                <p>Llévalo con zapatillas deportivas para un toque moderno y urbano, o con sandalias de tacón para una salida nocturna.</p>
+            </div>
+            <div class="inspiration-item">
+                <h3>Vestido de Lino</h3>
+                <p>Realza su belleza natural con accesorios de mimbre o madera y sandalias planas de cuero.</p>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p>Síguenos en nuestras redes sociales:</p>
-        <div class="social-links">
-            <a href="#" target="_blank">Instagram</a>
-            <a href="#" target="_blank">Facebook</a>
-            <a href="#" target="_blank">Pinterest</a>
-        </div>
+        <p class="footer-nav">
+            <a href="#">Contacto</a> |
+            <a href="#">Preguntas Frecuentes</a> |
+            <a href="#">Política de Privacidad</a>
+        </p>
         <p>© 2025 Tu Verano de Estilo - Todos los derechos reservados.</p>
     </footer>
 </body>
