@@ -17,7 +17,6 @@
         /* Estilos para el encabezado */
         .site-header {
             background-color: #222;
-            /* Color negro elegante */
             color: #fff;
             padding: 20px;
             text-align: center;
@@ -35,23 +34,67 @@
             padding: 20px 50px;
         }
 
-        header h1,
-        h3 {
-            color: #2c3e50;
-            text-align: center;
-        }
-
         header p {
             text-align: left;
-            /* Alineación a la izquierda para la introducción */
             color: #555;
             margin-bottom: 1.6em;
         }
 
+        /* Estilos para la portada tipo Vogue */
+        .cover-vogue-custom {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-bottom: 2em;
+        }
+
+        .cover-image-vogue {
+            flex: 0.6;
+            margin-right: 30px;
+        }
+
+        .cover-image-vogue img {
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .cover-text-vogue {
+            flex: 0.4;
+            text-align: left;
+        }
+
+        .title-vogue {
+            /* Intento de replicar la tipografía de Vogue (sans-serif, negrita) */
+            font-family: 'Baskerville', serif; /* Un serif elegante similar */
+            font-weight: bold;
+            font-size: 3.0em; /* Ajusta el tamaño */
+            line-height: 1.1;
+            color: #000; /* Texto en negro como suele ser en Vogue */
+            margin-top: 0;
+            margin-bottom: 0.3em;
+        }
+
+        .excerpt-vogue {
+            font-family: 'Arial', sans-serif; /* Una sans-serif común */
+            font-size: 1.1em;
+            color: #333;
+            line-height: 1.4;
+            margin-bottom: 0.5em;
+        }
+
+        /* Resto de estilos de tu página */
         header h1 {
             font-size: 3.2em;
             margin-bottom: 0.9em;
             font-weight: 700;
+            text-align: center;
+            color: #2c3e50;
         }
 
         h2 {
@@ -68,6 +111,8 @@
             margin-top: 1.2em;
             margin-bottom: 1em;
             font-weight: 500;
+            color: #2c3e50;
+            text-align: center;
         }
 
         p {
@@ -79,14 +124,12 @@
         ul {
             list-style: none;
             padding: 0;
-            text-align: center;
         }
 
         li {
             margin-bottom: 0.9em;
             color: #555;
             text-align: left;
-            /* Alineación a la izquierda para las listas */
         }
 
         .product-link {
@@ -110,11 +153,6 @@
             background-color: #2980b9;
         }
 
-        .trend {
-            font-style: italic;
-            color: #777;
-        }
-
         .summer-secrets {
             margin-top: 2.5em;
             padding: 25px;
@@ -123,118 +161,10 @@
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
         }
 
-        .style-inspiration {
-            margin-top: 2.5em;
-            padding: 25px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
-        }
+        /* ... (resto de tus estilos) ... */
 
-        .style-inspiration h2 {
-            text-align: left;
-            color: black;
-        }
-
-        .style-inspiration p {
-            text-align: left;
-        }
-
-        .style-inspiration ul {
-            text-align: left;
-        }
-
-        .style-inspiration li {
-            margin-bottom: 0.6em;
-        }
-
-        .testimonial {
-            margin-top: 1.5em;
-            padding: 15px;
-            background-color: #fdfdfd;
-            border-left: 5px solid #f08080;
-            border-radius: 5px;
-            font-style: italic;
-            color: #666;
-            margin-bottom: 1em;
-        }
-
-        .testimonial cite {
-            display: block;
-            text-align: right;
-            color: #777;
-            font-style: normal;
-            font-size: 0.9em;
-            margin-top: 0.5em;
-        }
-
-        .combine-with {
-            margin-top: 1em;
-            color: #555;
-            text-align: left;
-        }
-
-        .combine-with strong {
-            font-weight: bold;
-            color: #2c3e50;
-        }
-
-        .client-looks {
-            margin-top: 2.5em;
-            padding: 25px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
-            text-align: center;
-        }
-
-        .client-look {
-            margin-bottom: 1.5em;
-            padding: 15px;
-            border: 1px solid #eee;
-            border-radius: 5px;
-        }
-
-        .client-look h4 {
-            color: #2c3e50;
-            margin-bottom: 0.5em;
-            font-size: 1.1em;
-        }
-
-        .dress-description {
-            margin-bottom: 1em;
-        }
-
-        .dress-description p {
-            margin-bottom: 0.8em;
-            text-align: left;
-        }
-
-        .dress-suggestion {
-            color: #555;
-            font-size: 0.95em;
-            margin-top: 1em;
-            text-align: center;
-        }
-
-        .dress-suggestion strong {
-            color: #2c3e50;
-            font-weight: bold;
-        }
-
-        .dress-image {
-            max-width: 150px;
-            height: auto;
-            display: block;
-            margin: 0 auto 1em;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-        }
-
-        /* Estilos para el pie de página */
         .site-footer {
             background-color: #222;
-            /* Color negro elegante */
             color: #fff;
             padding: 20px;
             text-align: center;
@@ -243,83 +173,22 @@
             z-index: 100;
         }
 
-        /* Media query para pantallas más pequeñas */
-        @media (max-width: 600px) {
-            .container {
-                padding: 10px;
-            }
-
-            .site-header h1 {
-                font-size: 1.5em;
-            }
-
-            header h1 {
-                font-size: 2.7em;
-            }
-
-            h2 {
-                font-size: 2em;
-            }
-
-            h3 {
-                font-size: 1.6em;
-            }
-        }
-
-        /* Estilos para la portada tipo Vogue */
-        .cover-vogue-custom {
-            display: flex;
-            width: 100%;
-            align-items: center;
-            padding: 20px;
-            box-sizing: border-box;
-            margin-bottom: 2em; /* Añade espacio debajo de la portada */
-        }
-
-        .cover-image-vogue {
-            flex: 0.6; /* La imagen ocupa el 60% del espacio */
-            margin-right: 20px;
-        }
-
-        .cover-image-vogue img {
-            display: block;
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            border-radius: 8px; /* Opcional: esquinas redondeadas */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional: sombra */
-        }
-
-        .cover-text-vogue {
-            flex: 0.4; /* El texto ocupa el 40% del espacio */
-            text-align: left;
-        }
-
-        .title-vogue {
-            font-size: 2.8em; /* Ajusta el tamaño del título */
-            margin-top: 0;
-            margin-bottom: 0.5em;
-            line-height: 1.1;
-            color: #2c3e50; /* Un color elegante para el título */
-            font-weight: 700; /* Resaltar el título */
-        }
-
         /* Ajustes para pantallas más pequeñas */
         @media (max-width: 768px) {
             .cover-vogue-custom {
-                flex-direction: column; /* Apila la imagen y el texto */
+                flex-direction: column;
                 text-align: center;
             }
 
             .cover-image-vogue {
                 margin-right: 0;
                 margin-bottom: 20px;
-                flex: 1; /* La imagen ocupa todo el ancho */
+                flex: 1;
             }
 
             .cover-text-vogue {
                 text-align: center;
-                flex: 1; /* El texto ocupa todo el ancho */
+                flex: 1;
             }
 
             .title-vogue {
@@ -341,9 +210,8 @@
             </div>
             <div class="cover-text-vogue">
                 <h1 class="title-vogue">Desbloquea tu Verano de Impacto: Los Vestidos que Todas Querrán</h1>
-            </div>
+                </div>
         </div>
-
         <header>
             <p>¿Lista para descubrir los secretos de estilo que harán de este verano tu temporada más fabulosa? Sumérgete con
                 nosotras en el universo de los vestidos que están arrasando y encuentra tu próximo flechazo fashion.</p>
