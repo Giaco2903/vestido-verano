@@ -265,6 +265,67 @@
                 font-size: 1.6em;
             }
         }
+
+        /* Estilos para la portada tipo Vogue */
+        .cover-vogue-custom {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-bottom: 2em; /* Añade espacio debajo de la portada */
+        }
+
+        .cover-image-vogue {
+            flex: 0.6; /* La imagen ocupa el 60% del espacio */
+            margin-right: 20px;
+        }
+
+        .cover-image-vogue img {
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px; /* Opcional: esquinas redondeadas */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional: sombra */
+        }
+
+        .cover-text-vogue {
+            flex: 0.4; /* El texto ocupa el 40% del espacio */
+            text-align: left;
+        }
+
+        .title-vogue {
+            font-size: 2.8em; /* Ajusta el tamaño del título */
+            margin-top: 0;
+            margin-bottom: 0.5em;
+            line-height: 1.1;
+            color: #2c3e50; /* Un color elegante para el título */
+            font-weight: 700; /* Resaltar el título */
+        }
+
+        /* Ajustes para pantallas más pequeñas */
+        @media (max-width: 768px) {
+            .cover-vogue-custom {
+                flex-direction: column; /* Apila la imagen y el texto */
+                text-align: center;
+            }
+
+            .cover-image-vogue {
+                margin-right: 0;
+                margin-bottom: 20px;
+                flex: 1; /* La imagen ocupa todo el ancho */
+            }
+
+            .cover-text-vogue {
+                text-align: center;
+                flex: 1; /* El texto ocupa todo el ancho */
+            }
+
+            .title-vogue {
+                font-size: 2.2em;
+            }
+        }
     </style>
 </head>
 
@@ -274,8 +335,16 @@
     </div>
 
     <div class="container">
+        <div class="cover-vogue-custom">
+            <div class="cover-image-vogue">
+                <img src="tu-imagen-triptico.jpg" alt="Tríptico de vestidos de verano">
+            </div>
+            <div class="cover-text-vogue">
+                <h1 class="title-vogue">Desbloquea tu Verano de Impacto: Los Vestidos que Todas Querrán</h1>
+            </div>
+        </div>
+
         <header>
-            <h1>Desbloquea tu Verano de Impacto: Los Vestidos que Todas Querrán </h1>
             <p>¿Lista para descubrir los secretos de estilo que harán de este verano tu temporada más fabulosa? Sumérgete con
                 nosotras en el universo de los vestidos que están arrasando y encuentra tu próximo flechazo fashion.</p>
         </header>
