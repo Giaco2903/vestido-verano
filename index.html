@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -27,7 +27,7 @@
 
         .site-header h1 {
             margin: 0;
-            font-size: 2em;
+            font-size: 3.2em;
             font-weight: 700;
             text-align: center;
             color: #2c3e50;
@@ -49,19 +49,14 @@
             display: flex;
             width: 100%;
             align-items: center;
-            padding: 30px; /* Aumenté un poco el padding general */
+            padding: 20px;
             box-sizing: border-box;
             margin-bottom: 2em;
-            text-align: center; /* Centrar el contenido en pantallas grandes */
-            flex-direction: column; /* Apilar en pantallas pequeñas */
         }
 
         .cover-image-vogue {
-            flex: 0; /* No flex para que ocupe su ancho original */
-            margin-right: 0; /* Sin margen a la derecha */
-            margin-bottom: 20px; /* Espacio debajo de la imagen */
-            width: 50%; /* Ajusta el ancho de la imagen si es necesario */
-            max-width: 500px; /* Ancho máximo de la imagen */
+            flex: 0.6;
+            margin-right: 30px;
         }
 
         .cover-image-vogue img {
@@ -71,38 +66,29 @@
             object-fit: cover;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin: 0 auto; /* Centrar la imagen */
         }
 
         .cover-text-vogue {
-            flex: 0; /* No flex para que ocupe su ancho de contenido */
-            text-align: center; /* Centrar el texto */
-            width: 80%; /* Ancho del bloque de texto */
-            max-width: 600px; /* Ancho máximo del bloque de texto */
-            margin: 0 auto; /* Centrar el texto */
+            flex: 0.4;
+            text-align: left;
         }
 
         .title-vogue {
             font-family: 'Playfair Display', serif; /* Fuente más elegante */
-            font-size: 2.2em; /* Tamaño más pequeño */
-            line-height: 1.2;
+            font-weight: bold;
+            font-size: 3.0em;
+            line-height: 1.1;
             color: #000;
-            margin-top: 0.5em;
+            margin-top: 0;
             margin-bottom: 0.3em;
-            font-weight: normal; /* No todo en negrita */
-        }
-
-        .title-vogue strong {
-            font-weight: bold; /* Solo la primera parte en negrita */
         }
 
         .excerpt-vogue {
             font-family: 'Arial', sans-serif;
-            font-size: 1em;
+            font-size: 1.1em;
             color: #333;
             line-height: 1.4;
-            margin-top: 0.5em;
-            text-align: center; /* Centrar el extracto también */
+            margin-bottom: 0.5em;
         }
 
         /* Resto de estilos de tu página */
@@ -200,16 +186,16 @@
             .cover-image-vogue {
                 margin-right: 0;
                 margin-bottom: 20px;
-                width: 80%; /* Ajustar ancho en pantallas pequeñas */
+                flex: 1;
             }
 
             .cover-text-vogue {
                 text-align: center;
-                width: 90%;
+                flex: 1;
             }
 
             .title-vogue {
-                font-size: 1.8em;
+                font-size: 2.2em;
             }
         }
     </style>
@@ -226,8 +212,8 @@
                 <img src="Triptico_portada.jpeg" alt="Tríptico de vestidos de verano">
             </div>
             <div class="cover-text-vogue">
-                <h1 class="title-vogue"><strong>Desbloquea tu Verano de Impacto:</strong><br>Los Vestidos que Todas Querrán</h1>
-            </div>
+                <h1 class="title-vogue">Desbloquea tu Verano de Impacto: Los Vestidos que Todas Querrán</h1>
+                </div>
         </div>
         <header>
             <p>¿Lista para descubrir los secretos de estilo que harán de este verano tu temporada más fabulosa? Sumérgete con
