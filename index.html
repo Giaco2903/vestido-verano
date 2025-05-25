@@ -203,6 +203,12 @@
                 margin-bottom: 1em; /* Añadir un poco de margen inferior a la imagen en desktop */
             }
 
+            .dress-image.adjust-height {
+                height: auto; /* Dejar que la altura se ajuste al contenido */
+                max-height: 450px; /* Establecer una altura máxima para evitar que crezcan demasiado */
+                object-fit: contain; /* Asegurar que la imagen se ajuste dentro del contenedor sin recortar */
+            }
+
             .dress-info .dress-description {
                 margin-top: 0.2em; /* Ajustar un poco el margen superior de la descripción */
             }
@@ -397,7 +403,7 @@
             <div class="dress-section">
                 <div class="dress-image-container">
                     <h3>Midi Chic: La Elegancia Refrescante que Amarán Todas</h3>
-                    <img src="7176DKvivsL._AC_SX466_.jpg" alt="Vestido Midi Chic" class="dress-image">
+                    <img src="7176DKvivsL._AC_SX466_.jpg" alt="Vestido Midi Chic" class="dress-image adjust-height">
                 </div>
                 <div class="dress-info">
                     <div class="dress-description">
@@ -432,7 +438,7 @@
             <div class="dress-section">
                 <div class="dress-image-container">
                     <h3>Vestido Túnica Azul Fluido con Volantes: Elegancia Desenfadada para tu Día a Día</h3>
-                    <img src="6122W6xHn0L._AC_SY879_.jpg" alt="Vestido Túnica Azul Fluido con Volantes"
+                   <img src="6122W6xHn0L._AC_SY879_.jpg" alt="Vestido Túnica Azul Fluido con Volantes" class="dress-image adjust-height">
                         class="dress-image">
                 </div>
                 <div class="dress-info">
