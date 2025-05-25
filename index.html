@@ -215,26 +215,33 @@
         text-align: left;
     }
 
-    .product-link {
-        display: block;
-        width: 85%;
-        max-width: 400px;
-        margin: 2em auto;
-        padding: 18px 30px;
-        background-color: #3498db;
-        color: white;
-        text-decoration: none;
-        border-radius: 35px;
-        text-align: center;
-        font-weight: bold;
-        letter-spacing: 1.3px;
-        box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1);
-        transition: background-color 0.3s ease;
-    }
+   .product-link {
+    display: inline-block; /* Cambiado a inline-block para ajustar el ancho al contenido si lo prefieres */
+    padding: 15px 30px; /* Ligeramente reducido el padding vertical */
+    background-color: #ff6b6b; /* Un color más llamativo (rojo anaranjado) */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px; /* Bordes menos redondeados para un estilo diferente */
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2); /* Sombra ligeramente diferente */
+    transition: background-color 0.3s ease;
+    margin: 1.5em auto; /* Ajuste del margen */
+    width: auto; /* El ancho se ajusta al contenido */
+}
 
-    .product-link:hover {
-        background-color: #2980b9;
+.product-link:hover {
+    background-color: #e65a5a; /* Un tono más oscuro al pasar el ratón */
+}
+
+/* Para que ocupe todo el ancho en móviles (si lo prefieres) */
+@media (max-width: 600px) {
+    .product-link {
+        width: 100%;
+        max-width: none;
     }
+}
 
     .summer-secrets {
         margin-top: 2.5em;
