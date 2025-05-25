@@ -27,8 +27,8 @@
 
         .site-header h1 {
             margin: 0;
-            font-size: 2.8em; /* Reduje el tamaño del título principal */
-            font-weight: 700;
+            font-size: 2.4em; /* Aún más pequeño */
+            font-weight: 400; /* Menos negrita */
             text-align: center;
             color: #fff;
             font-family: 'Playfair Display', serif; /* Fuente más elegante */
@@ -55,8 +55,8 @@
         }
 
         .cover-image-vogue {
-            flex: 0.55; /* Reduje un poco el espacio de la imagen */
-            margin-right: 4%; /* Aumenté el margen derecho para mover el texto */
+            flex: 0.6;
+            margin-right: 3%; /* Ajuste del margen */
         }
 
         .cover-image-vogue img {
@@ -69,7 +69,7 @@
         }
 
         .cover-text-vogue {
-            flex: 0.45; /* Aumenté un poco el espacio del texto */
+            flex: 0.4;
             text-align: left;
             display: flex;
             flex-direction: column;
@@ -77,34 +77,27 @@
             height: 100%;
         }
 
-        .title-vogue {
-            font-family: 'Playfair Display', serif; /* Fuente más elegante */
-            font-size: 2.0em;
-            line-height: 1.2;
-            color: #000;
-            margin-top: 0;
+        .cover-overline {
+            font-family: 'Arial', sans-serif;
+            font-size: 0.9em;
+            color: #777;
             margin-bottom: 0.3em;
-            font-weight: normal;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
         }
 
-        .title-vogue strong {
+        .title-vogue {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.1em;
+            line-height: 1.1;
+            color: #000;
+            margin-top: 0;
+            margin-bottom: 0.5em;
             font-weight: bold;
         }
 
-        .excerpt-vogue {
-            font-family: 'Arial', sans-serif;
-            font-size: 0.9em;
-            color: #333;
-            line-height: 1.4;
-            margin-top: 0.5em;
-            text-align: left;
-        }
-
-        .cover-subheadline {
-            font-size: 1em;
-            color: #555;
-            margin-bottom: 0.5em;
-            font-style: italic;
+        .title-vogue span {
+            font-weight: normal;
         }
 
         /* Estilos para las imágenes de los vestidos */
@@ -238,8 +231,8 @@
                 <img src="Triptico_portada.jpeg" alt="Tríptico de vestidos de verano">
             </div>
             <div class="cover-text-vogue">
-                <p class="cover-subheadline">Los imprescindibles de la temporada</p>
-                <h1 class="title-vogue"><strong>Desbloquea tu Verano de Impacto:</strong> Los Vestidos que Todas Querrán</h1>
+                <p class="cover-overline">Tendencias de Verano</p>
+                <h1 class="title-vogue">Desbloquea tu <strong>Verano de Impacto:</strong> <span>Los Vestidos que Todas Querrán</span></h1>
             </div>
         </div>
         <header>
