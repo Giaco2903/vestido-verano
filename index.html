@@ -40,6 +40,34 @@
             .title-vogue {
                 font-size: 1.6em;
             }
+
+            .dress-section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .dress-image-container {
+                text-align: center;
+                margin-bottom: 1.5em;
+                width: 100%;
+            }
+
+            .dress-info h3 {
+                text-align: center;
+                margin-top: 0.5em;
+            }
+
+            .dress-image {
+                max-width: 80%;
+                height: auto;
+                display: block;
+                margin: 0 auto 1.5em;
+            }
+
+            .dress-info {
+                width: 100%;
+                text-align: center;
+            }
         }
 
         /* Estilos del encabezado */
@@ -129,78 +157,88 @@
 
         /* Estilos para la sección de vestidos */
         .dress-item {
-            margin-bottom: 3em; /* Espacio entre cada item de vestido */
+            margin-bottom: 3em;
         }
 
         .dress-section {
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            align-items: flex-start; /* Align items to the start on the cross axis */
+            gap: 2em;
             padding: 15px;
             box-sizing: border-box;
         }
 
         .dress-image-container {
-            text-align: center;
-            margin-bottom: 1.5em;
-            width: 100%;
+            flex-shrink: 0; /* Don't allow image container to shrink */
+            width: 300px; /* Fixed width for the image area */
+            text-align: left;
+            margin-bottom: 0;
+        }
+
+        .dress-info {
+            flex-grow: 1; /* Allow text info to take up remaining space */
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Align text content to the start */
         }
 
         .dress-info h3 {
-            text-align: center;
-            margin-top: 0.5em;
+            text-align: left;
+            margin-top: 0; /* Ensure title starts at the top of the info block */
+            margin-bottom: 0.5em;
         }
 
         .dress-image {
-            max-width: 200px;
-            height: auto;
             display: block;
-            margin: 0 auto 1.5em;
+            max-width: 100%;
+            height: auto;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            margin-bottom: 1em;
         }
 
         .dress-info .dress-description {
-            margin-top: 0.5em;
+            margin-bottom: 1em;
         }
 
-        /* Estilos para pantallas más grandes (desktop) */
-        @media (min-width: 768px) {
-            .dress-section {
-                flex-direction: row;
-                align-items: flex-start; /* Alineación superior */
-                gap: 2em; /* Añadimos un poco de espacio entre imagen y texto */
-            }
+        .combine-with {
+            margin-bottom: 0.7em;
+            font-style: italic;
+            color: #777;
+        }
 
-            .dress-image-container {
-                flex: 0 0 300px; /* Ancho fijo para la imagen */
-                text-align: left;
-                margin-bottom: 0;
-            }
+        .product-link {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 35px;
+            font-weight: bold;
+            letter-spacing: 1.3px;
+            box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+            margin-top: 1em;
+        }
 
-            .dress-info {
-                flex: 1; /* El texto ocupa el espacio restante */
-                padding-left: 0; /* Removemos el padding que podría afectar la alineación */
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start; /* Aseguramos la alineación superior del contenido */
-            }
+        .product-link:hover {
+            background-color: #2980b9;
+        }
 
-            .dress-info h3 {
-                text-align: left; /* Título alineado a la izquierda */
-                margin-top: 0; /* Aseguramos que el título empiece desde arriba */
-                margin-bottom: 0.5em; /* Un poco de espacio debajo del título */
-            }
+        .testimonial {
+            margin-top: 1em;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            font-size: 0.9em;
+            color: #555;
+        }
 
-            .dress-image {
-                max-width: 100%;
-                height: auto;
-            }
-
-            .product-link {
-                width: auto; /* El botón ocupa el ancho necesario */
-                margin-left: 0;
-            }
+        .testimonial cite {
+            font-style: italic;
+            display: block;
+            text-align: right;
+            color: #777;
         }
 
         h2 {
@@ -214,11 +252,11 @@
 
         h3 {
             font-size: 1.8em;
-            margin-top: 1.2em;
+            margin-top: 0; /* Reset mobile top margin */
             margin-bottom: 1em;
             font-weight: 500;
             color: #2c3e50;
-            text-align: center;
+            text-align: left; /* Align left on desktop */
         }
 
         p {
@@ -236,27 +274,6 @@
             margin-bottom: 0.9em;
             color: #555;
             text-align: left;
-        }
-
-        .product-link {
-            display: block;
-            width: 85%;
-            max-width: 400px;
-            margin: 2em auto;
-            padding: 18px 30px;
-            background-color: #3498db;
-            color: white;
-            text-decoration: none;
-            border-radius: 35px;
-            text-align: center;
-            font-weight: bold;
-            letter-spacing: 1.3px;
-            box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s ease;
-        }
-
-        .product-link:hover {
-            background-color: #2980b9;
         }
 
         .summer-secrets {
@@ -277,25 +294,19 @@
             z-index: 100;
         }
 
-        /* Ajustes para pantallas más pequeñas */
-        @media (max-width: 768px) {
-            .cover-vogue-custom {
-                flex-direction: column;
-                text-align: center;
+        /* Specific adjustment for desktop layout */
+        @media (min-width: 768px) {
+            .dress-section {
+                align-items: flex-start; /* Ensure top alignment of image and text block */
             }
 
-            .cover-image-vogue {
-                margin-right: 0;
-                margin-bottom: 20px;
-                width: 80%;
+            .dress-info {
+                align-items: flex-start; /* Ensure content within text block starts at the top */
             }
 
-            .cover-text-vogue {
-                text-align: center;
-            }
-
-            .title-vogue {
-                font-size: 1.8em;
+            .dress-image-container h3 {
+                margin-top: 0; /* Align the title next to the image to the very top */
+                text-align: left; /* Make sure the title is left-aligned */
             }
         }
     </style>
