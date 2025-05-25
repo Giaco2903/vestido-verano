@@ -18,19 +18,19 @@
         /* Ajustes para pantallas más pequeñas (móviles) */
         @media (max-width: 600px) {
             .container {
-                padding: 15px; /* Reducir el padding general */
+                padding: 15px;
             }
 
             .cover-vogue-custom {
-                padding: 20px; /* Reducir el padding de la portada */
-                flex-direction: column; /* Apilar imagen y texto */
+                padding: 20px;
+                flex-direction: column;
                 text-align: center;
             }
 
             .cover-image-vogue {
                 margin-right: 0;
                 margin-bottom: 15px;
-                width: 100%; /* La imagen ocupa todo el ancho */
+                width: 100%;
             }
 
             .cover-text-vogue {
@@ -38,11 +38,11 @@
             }
 
             .title-vogue {
-                font-size: 1.6em; /* Reducir el tamaño del título de la portada */
+                font-size: 1.6em;
             }
         }
 
-        /* Estilos para el encabezado */
+        /* Estilos del encabezado */
         .site-header {
             background-color: #222;
             color: #fff;
@@ -54,11 +54,11 @@
 
         .site-header h1 {
             margin: 0;
-            font-size: 2.4em; /* Aún más pequeño */
-            font-weight: 400; /* Menos negrita */
+            font-size: 2.4em;
+            font-weight: 400;
             text-align: center;
             color: #fff;
-            font-family: 'Playfair Display', serif; /* Fuente más elegante */
+            font-family: 'Playfair Display', serif;
         }
 
         .container {
@@ -71,7 +71,7 @@
             margin-bottom: 1.6em;
         }
 
-        /* Estilos para la portada tipo Vogue */
+        /* Estilos de la portada Vogue */
         .cover-vogue-custom {
             display: flex;
             width: 100%;
@@ -83,7 +83,7 @@
 
         .cover-image-vogue {
             flex: 0.6;
-            margin-right: 3%; /* Ajuste del margen */
+            margin-right: 3%;
         }
 
         .cover-image-vogue img {
@@ -128,89 +128,84 @@
         }
 
         /* Estilos para la sección de vestidos */
+        .dress-item {
+            margin-bottom: 3em; /* Espacio entre cada item de vestido */
+        }
+
         .dress-section {
             display: flex;
-            flex-direction: column; /* Apilar imagen y texto en móviles por defecto */
-            align-items: center; /* Centrar elementos horizontalmente en móvil */
-            margin-bottom: 4em; /* Más espacio entre cada vestido */
-            padding: 15px; /* Añadir un poco de padding a la sección general del vestido */
-            box-sizing: border-box; /* Asegurar que el padding no aumente el ancho */
+            flex-direction: column;
+            align-items: center;
+            padding: 15px;
+            box-sizing: border-box;
         }
 
         .dress-image-container {
             text-align: center;
-            margin-bottom: 1.5em; /* Más espacio entre la imagen y el texto en móvil */
-            width: 100%; /* Asegurar que el contenedor de la imagen ocupe todo el ancho disponible */
-        }
-
-        .dress-info {
-            width: 100%; /* Asegurar que la info ocupe todo el ancho en móvil */
+            margin-bottom: 1.5em;
+            width: 100%;
         }
 
         .dress-info h3 {
-            text-align: center; /* Centrar el título del vestido en móviles */
-            margin-top: 0.5em; /* Reducir el margen superior del título para alinearlo mejor */
+            text-align: center;
+            margin-top: 0.5em;
         }
 
         .dress-image {
-            max-width: 200px; /* Aumentar el tamaño de la imagen en móvil para que se vea mejor */
+            max-width: 200px;
             height: auto;
             display: block;
-            margin: 0 auto 1.5em; /* Centrar la imagen y añadir margen inferior */
+            margin: 0 auto 1.5em;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
         }
 
         .dress-info .dress-description {
-            margin-top: 0.5em; /* Reducir el margen superior de la descripción */
+            margin-top: 0.5em;
         }
 
         /* Estilos para pantallas más grandes (desktop) */
         @media (min-width: 768px) {
             .dress-section {
-                flex-direction: row; /* Imagen y texto lado a lado en pantallas grandes */
-                align-items: flex-start; /* Alinear los elementos al inicio (arriba) */
-                justify-content: center; /* Centrar la sección de vestido si hay espacio */
-                gap: 3em; /* Espacio entre la imagen y la información del vestido */
-                margin-bottom: 5em; /* Más espacio entre cada vestido en desktop */
+                flex-direction: row;
+                align-items: flex-start; /* Alineación superior */
+                justify-content: center;
+                gap: 3em;
             }
 
             .dress-image-container {
-                flex: 0 0 350px; /* Ancho fijo para la imagen en desktop */
-                margin-bottom: 0; /* Eliminar margen inferior cuando está lado a lado */
-                text-align: left; /* Alinear la imagen a la izquierda */
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start; /* Asegurar la alineación del contenido interno */
+                flex: 0 0 350px;
+                margin-bottom: 0;
+                text-align: left;
             }
 
             .dress-info {
-                flex: 1; /* La información del vestido ocupa el espacio restante */
-                padding-left: 0; /* Eliminar el padding izquierdo si ya lo tenía */
+                flex: 1;
+                padding-left: 0;
                 display: flex;
                 flex-direction: column;
-                align-items: flex-start; /* Alinear el texto desde la parte superior */
+                align-items: flex-start; /* Alineación superior del texto */
             }
 
             .dress-info h3 {
-                text-align: left; /* Título alineado a la izquierda en pantallas grandes */
-                margin-top: 0; /* Asegurar que el título esté alineado con la parte superior */
+                text-align: left;
+                margin-top: 0;
             }
 
             .dress-image {
-                max-width: 100%; /* La imagen ocupa el 100% de su contenedor fijo */
+                max-width: 100%;
                 height: auto;
-                margin-bottom: 1em; /* Añadir un poco de margen inferior a la imagen en desktop */
+                margin-bottom: 1em;
             }
 
             .dress-image.adjust-height {
-                height: auto; /* Dejar que la altura se ajuste al contenido */
-                max-height: 450px; /* Establecer una altura máxima para evitar que crezcan demasiado */
-                object-fit: contain; /* Asegurar que la imagen se ajuste dentro del contenedor sin recortar */
+                /* Vamos a dejar que la altura se ajuste al contenedor */
+                max-height: none; /* Removemos la altura máxima anterior */
+                object-fit: contain; /* Mantenemos el aspect ratio */
             }
 
             .dress-info .dress-description {
-                margin-top: 0.2em; /* Ajustar un poco el margen superior de la descripción */
+                margin-top: 0.2em;
             }
         }
 
@@ -229,7 +224,7 @@
             margin-bottom: 1em;
             font-weight: 500;
             color: #2c3e50;
-            text-align: center; /* Centrar los títulos de las secciones de vestidos */
+            text-align: center;
         }
 
         p {
@@ -343,14 +338,14 @@
             </p>
             <ul>
                 <li><strong>El poder de lo natural:</strong> Tejidos como el <strong>lino</strong>, el <strong>algodón
-                        orgánico</strong> y el
+                            orgánico</strong> y el
                     <strong>punto ligero</strong> son tus mejores aliados contra el calor. ¡Y sí, son súper chic!</li>
                 <li><strong>Colorterapia a tope:</strong> Desde los <strong>tonos vibrantes</strong> como el naranja sunset y el
                     verde
                     esmeralda, hasta los <strong>pasteles dulces</strong> como el lavanda y el melocotón. ¡Tu armario será un
                     arcoíris!</li>
                 <li><strong>Detalles que enamoran:</strong> <strong>Volantes estratégicos</strong>, <strong>bordados
-                        artesanales</strong>,
+                            artesanales</strong>,
                     <strong>transparencias sutiles</strong> y los siempre favorecedores <strong>escotes Bardot</strong>.
                     ¡Los pequeños
                     detalles marcan la diferencia!</li>
@@ -364,145 +359,164 @@
                 de verano, inspirándonos a todas a atrevernos con estilismos llenos de personalidad?</p>
         </section>
 
-<section>
+        <section>
             <h2>Tu Selección Exclusiva: Vestidos para Conquistar el Verano </h2>
-            <div class="dress-section">
-                <div class="dress-image-container">
-                    <h3>Maxi Bohemio: Despierta tu Espíritu Libre con Estilo</h3>
-                    <img src="519rdGAvk-S._AC_SY606_.jpg" alt="Vestido Maxi Bohemio" class="dress-image">
+            <div class="dress-item">
+                <div class="dress-section">
+                    <div class="dress-image-container">
+                        <h3>Maxi Bohemio: Despierta tu Espíritu Libre con Estilo</h3>
+                        <img src="519rdGAvk-S._AC_SY606_.jpg" alt="Vestido Maxi Bohemio" class="dress-image">
+                    </div>
+                    <div class="dress-info">
+                        <div class="dress-description">
+                            <p>Imagina la sensación de un tejido ligero acariciando tu piel mientras la suave brisa del verano te
+                                envuelve.
+                                Nuestro <strong>Maxi Bohemio</strong> es la encarnación de la libertad y el estilo. Su estampado
+                                evocador de
+                                la naturaleza y su corte fluido te harán sentir etérea y elegante en cada paso. Perfecto para esos
+                                días
+                                en los que quieres sentirte cómoda sin sacrificar ni una pizca de glamour.</p>
+                        </div>
+                        <p class="combine-with"><strong>Ideal para:</strong> Un paseo al atardecer, un festival relajado o una
+                            cena
+                            informal con encanto.</p>
+                        <p class="combine-with"><strong>Completa tu look con:</strong> Sandalias planas de cuero, un sombrero de
+                            ala ancha
+                            y un bolso de rafia.</p>
+                        <a href="https://amzn.to/4j9eZTL" class="product-link" target="_blank"
+                            rel="noopener noreferrer">¡Encuentra mi Maxi Bohemio!</a>
+                        <div class="testimonial">
+                            "Un vestido que te hace sentir libre y elegante al instante. La calidad es excelente."
+                            <cite>- Elena R.</cite>
+                        </div>
+                        <div class="testimonial">
+                            "Ideal para mis tardes de verano. El tejido es muy agradable y el diseño precioso."
+                            <cite>- Patricia G.</cite>
+                        </div>
+                    </div>
                 </div>
-                <div class="dress-info">
-                    <div class="dress-description">
-                        <p>Imagina la sensación de un tejido ligero acariciando tu piel mientras la suave brisa del verano te
-                            envuelve.
-                            Nuestro <strong>Maxi Bohemio</strong> es la encarnación de la libertad y el estilo. Su estampado
-                            evocador de
-                            la naturaleza y su corte fluido te harán sentir etérea y elegante en cada paso. Perfecto para esos
-                            días
-                            en los que quieres sentirte cómoda sin sacrificar ni una pizca de glamour.</p>
-                    </div>
-                    <p class="combine-with"><strong>Ideal para:</strong> Un paseo al atardecer, un festival relajado o una
-                        cena
-                        informal con encanto.</p>
-                    <p class="combine-with"><strong>Completa tu look con:</strong> Sandalias planas de cuero, un sombrero de
-                        ala ancha
-                        y un bolso de rafia.</p>
-                    <a href="https://amzn.to/4j9eZTL" class="product-link" target="_blank"
-                        rel="noopener noreferrer">¡Encuentra mi Maxi Bohemio!</a>
-                    <div class="testimonial">
-                        "Un vestido que te hace sentir libre y elegante al instante. La calidad es excelente."
-                        <cite>- Elena R.</cite>
-                    </div>
-                    <div class="testimonial">
-                        "Ideal para mis tardes de verano. El tejido es muy agradable y el diseño precioso."
-                        <cite>- Patricia G.</cite>
-                    </div>
-                </div>
+                <div style="border-bottom: 1px solid #eee; margin: 2em 0;"></div>
             </div>
 
-            <div class="dress-section">
-                <div class="dress-image-container">
-                    <h3>Midi Chic: La Elegancia Refrescante que Amarán Todas</h3>
-                    <img src="7176DKvivsL._AC_SX466_.jpg" alt="Vestido Midi Chic" class="dress-image adjust-height">
+            <div class="dress-item">
+                <div class="dress-section">
+                    <div class="dress-image-container">
+                        <h3>Midi Chic: La Elegancia Refrescante que Amarán Todas</h3>
+                        <img src="7176DKvivsL._AC_SX466_.jpg" alt="Vestido Midi Chic" class="dress-image adjust-height">
+                    </div>
+                    <div class="dress-info">
+                        <div class="dress-description">
+                            <p>¿Buscas esa prenda versátil que te acompañe desde un brunch con amigas hasta una cena especial?
+                                El
+                                <strong>Midi Chic</strong> es tu aliado perfecto. Su corte cuidadosamente diseñado realza tu
+                                silueta,
+                                mientras que tejidos ligeros como el lino o el algodón te mantendrán fresca y sofisticada durante
+                                todo el
+                                día. Un toque de color de tendencia, como el azul cielo o el rosa empolvado, elevará tu estilo sin
+                                esfuerzo.</p>
+                        </div>
+                        <p class="combine-with"><strong>Ideal para:</strong> Un evento de día, una reunión importante o una noche
+                            en la
+                            ciudad.</p>
+                        <p class="combine-with"><strong>Completa tu look con:</strong> Sandalias de tacón bajo o bailarinas para
+                            el día, y
+                            stilettos con un clutch joya para la noche.</p>
+                        <a href="https://amzn.to/4kACMNN" class="product-link" target="_blank"
+                            rel="noopener noreferrer">¡Descubre el Midi Chic!</a>
+                        <div class="testimonial">
+                            "Me encanta lo versátil que es este vestido. Lo uso tanto para trabajar como para salir."
+                            <cite>- Isabel M.</cite>
+                        </div>
+                        <div class="testimonial">
+                            "El corte es muy favorecedor y el color es tal como se ve en la foto. ¡Muy contenta con mi compra!"
+                            <cite>- Carmen S.</cite>
+                        </div>
+                    </div>
                 </div>
-                <div class="dress-info">
-                    <div class="dress-description">
-                        <p>¿Buscas esa prenda versátil que te acompañe desde un brunch con amigas hasta una cena especial?
-                            El
-                            <strong>Midi Chic</strong> es tu aliado perfecto. Su corte cuidadosamente diseñado realza tu
-                            silueta,
-                            mientras que tejidos ligeros como el lino o el algodón te mantendrán fresca y sofisticada durante
-                            todo el
-                            día. Un toque de color de tendencia, como el azul cielo o el rosa empolvado, elevará tu estilo sin
-                            esfuerzo.</p>
-                    </div>
-                    <p class="combine-with"><strong>Ideal para:</strong> Un evento de día, una reunión importante o una noche
-                        en la
-                        ciudad.</p>
-                    <p class="combine-with"><strong>Completa tu look con:</strong> Sandalias de tacón bajo o bailarinas para
-                        el día, y
-                        stilettos con un clutch joya para la noche.</p>
-                    <a href="https://amzn.to/4kACMNN" class="product-link" target="_blank"
-                        rel="noopener noreferrer">¡Descubre el Midi Chic!</a>
-                    <div class="testimonial">
-                        "Me encanta lo versátil que es este vestido. Lo uso tanto para trabajar como para salir."
-                        <cite>- Isabel M.</cite>
-                    </div>
-                    <div class="testimonial">
-                        "El corte es muy favorecedor y el color es tal como se ve en la foto. ¡Muy contenta con mi compra!"
-                        <cite>- Carmen S.</cite>
-                    </div>
-                </div>
+                <div style="border-bottom: 1px solid #eee; margin: 2em 0;"></div>
             </div>
 
-            <div class="dress-section">
-                <div class="dress-image-container">
-                    <h3>Vestido Túnica Azul Fluido con Volantes: Elegancia Desenfadada para tu Día a Día</h3>
-                   <img src="6122W6xHn0L._AC_SY879_.jpg" alt="Vestido Túnica Azul Fluido con Volantes" class="dress-image adjust-height">
-                </div>
-                <div class="dress-info">
-                    <div class="dress-description">
-                        <p>Descubre la perfecta combinación de estilo y confort con nuestro <strong>Vestido Túnica Azul Fluido con
-                                Volantes</strong>.
-                            Diseñado para la mujer moderna que valora la comodidad sin renunciar a la elegancia, este vestido es ideal
-                            para cualquier ocasión.
-                            Su silueta holgada y el detalle de volantes añaden un toque femenino y dinámico, mientras que el profundo
-                            tono azul aporta sofisticación y versatilidad.
-                            Las mangas largas abullonadas completan el look con un aire romántico y actual.
+            <div class="dress-item">
+                <div class="dress-section">
+                    <div class="dress-image-container">
+                        <h3>Vestido Túnica Azul Fluido con Volantes: Elegancia Desenfadada para tu Día a Día</h3>
+                        <img src="6122W6xHn0L._AC_SY879_.jpg" alt="Vestido Túnica Azul Fluido con Volantes"
+                            class="dress-image adjust-height">
+                    </div>
+                    <div class="dress-info">
+                        <div class="dress-description">
+                            <p>Descubre la perfecta combinación de estilo y confort con nuestro <strong>Vestido Túnica Azul Fluido con
+                                    Volantes</strong>.
+                                Diseñado para la mujer moderna que valora la comodidad sin renunciar a la elegancia, este vestido es ideal
+                                para cualquier ocasión.
+                                Su silueta holgada y el detalle de volantes añaden un toque femenino y dinámico, mientras que el profundo
+                                tono azul aporta sofisticación y versatilidad.
+                                Las mangas largas abullonadas completan el look con un aire romántico y actual.
+                            </p>
+                        </div>
+                        <p class="combine-with">
+                            <strong>Ideal para:</strong> Un paseo relajado, una comida con amigas, una tarde de compras o incluso un evento
+                            casual.
                         </p>
-                    </div>
-                    <p class="combine-with">
-                        <strong>Ideal para:</strong> Un paseo relajado, una comida con amigas, una tarde de compras o incluso un evento
-                        casual.
-                    </p>
-                    <p class="combine-with">
-                        <strong>Completa tu look con:</strong> Botines para un estilo urbano chic, sandalias planas para un look
-                        veraniego y relajado, o tacones para una ocasión más especial. Añade un collar largo y unos pendientes
-                        llamativos para personalizar tu estilo.
-                    </p>
-                    <a href="https://amzn.to/3SjkpRe" class="product-link" target="_blank" rel="noopener noreferrer">
-                        ¡Hazte con tu Vestido Azul Fluido!
-                    </a>
-                    <div class="testimonial">
-                        "Me encanta este vestido! Es súper cómodo y el color es precioso. Lo puedo usar para todo."
-                        <cite>- Laura M.</cite>
-                    </div>
-                    <div class="testimonial">
-                        "Es justo lo que buscaba: un vestido bonito pero que no me apriete. Los volantes le dan un toque especial."
-                        <cite>- Ana R.</cite>
+                        <p class="combine-with">
+                            <strong>Completa tu look con:</strong> Botines para un estilo urbano chic, sandalias planas para un look
+                            veraniego y relajado, o tacones para una ocasión más especial. Añade un collar largo y unos pendientes
+                            llamativos para personalizar tu estilo.
+                        </p>
+                        <a href="https://amzn.to/3SjkpRe" class="product-link" target="_blank" rel="noopener noreferrer">
+                            ¡Hazte con tu Vestido Azul Fluido!
+                        </a>
+                        <div class="testimonial">
+                            "Me encanta este vestido! Es súper cómodo y el color es precioso. Lo puedo usar para todo."
+                            <cite>- Laura M.</cite>
+                        </div>
+                        <div class="testimonial">
+                            "Es justo lo que buscaba: un vestido bonito pero que no me apriete. Los volantes le dan un toque especial."
+                            <cite>- Ana R.</cite>
+                        </div>
                     </div>
                 </div>
+                <div style="border-bottom: 1px solid #eee; margin: 2em 0;"></div>
             </div>
 
-            <div class="dress-section">
-                <div class="dress-image-container">
-                    <h3>Vestido de Lino Fresco: El Secreto para un Verano Cómodo y Sofisticado</h3>
-                    <img src="61LqzzSOs3L._AC_SX679_.jpg" alt="Vestido de Lino Fresco" class="dress-image">
+            <div class="dress-item">
+                <div class="dress-section">
+                    <div class="dress-image-container">
+                        <h3>Vestido de Lino Fresco: El Secreto para un Verano Cómodo y Sofisticado</h3>
+                        <img src="61LqzzSOs3L._AC_SX679_.jpg" alt="Vestido de Lino Fresco" class="dress-image">
+                    </div>
+                    <div class="dress-info">
+                        <div class="dress-description">
+                            <p>Si buscas la perfecta armonía entre confort y elegancia, nuestro <strong>Vestido de Lino Fresco</strong>
+                                es para ti. El lino, con su tacto suave y transpirabilidad, te mantendrá fresca incluso en los días más
+                                cálidos, mientras que su corte sencillo pero favorecedor te asegura un look chic sin esfuerzo. Un básico
+                                imprescindible para un verano lleno de estilo relajado.</p>
+                        </div>
+                        <p class="combine-with"><strong>Ideal para:</strong> Un día de relax, una comida al aire libre o una escapada de
+                            fin de semana.</p>
+                        <p class="combine-with"><strong>Completa tu look con:</strong> Alpargatas para un estilo relajado, o sandalias de
+                            cuero para un toque más elegante. Los accesorios de madera o rafia realzan su encanto natural.</p>
+                        <a href="https://amzn.to/43enfgQ" class="product-link" target="_blank"
+                            rel="noopener noreferrer">¡Siente la frescura del Lino!</a>
+                        <div class="testimonial">
+                            "La calidad del lino es increíble. Un básico imprescindible para el verano."
+                            <cite>- Sofía R.</cite>
+                        </div>
+                        <div class="testimonial">
+                            "Sencillo pero con mucho estilo. Me encanta lo cómodo que es para los días calurosos."
+                            <cite>- Andrea F.</cite>
+                        </div>
+                    </div>
                 </div>
-                <div class="dress-info">
-                    <div class="dress-description">
-                        <p>Si buscas la perfecta armonía entre confort y elegancia, nuestro <strong>Vestido de Lino Fresco</strong>
-                            es para ti. El lino, con su tacto suave y transpirabilidad, te mantendrá fresca incluso en los días más
-                            cálidos, mientras que su corte sencillo pero favorecedor te asegura un look chic sin esfuerzo. Un básico
-                            imprescindible para un verano lleno de estilo relajado.</p>
-                    </div>
-                    <p class="combine-with"><strong>Ideal para:</strong> Un día de relax, una comida al aire libre o una escapada de
-                        fin de semana.</p>
-                    <p class="combine-with"><strong>Completa tu look con:</strong> Alpargatas para un estilo relajado, o sandalias de
-                        cuero para un toque más elegante. Los accesorios de madera o rafia realzan su encanto natural.</p>
-                    <a href="https://amzn.to/43enfgQ" class="product-link" target="_blank"
-                        rel="noopener noreferrer">¡Siente la frescura del Lino!</a>
-                    <div class="testimonial">
-                        "La calidad del lino es increíble. Un básico imprescindible para el verano."
-                        <cite>- Sofía R.</cite>
-                    </div>
-                    <div class="testimonial">
-                        "Sencillo pero con mucho estilo. Me encanta lo cómodo que es para los días calurosos."
-                        <cite>- Andrea F.</cite>
-                    </div>
-                </div>
+                <div style="border-bottom: 1px solid #eee; margin: 2em 0;"></div>
             </div>
         </section>
+    </div>
+
+    <div class="site-footer">
+        <p>© 2025 Tu Verano de Estilo. Todos los derechos reservados.</p>
+    </div>
+</body>
 
         <style>
             /* Estilos para la nueva estructura de la sección de vestidos */
