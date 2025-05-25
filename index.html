@@ -29,7 +29,7 @@
         font-size: 3.2em;
         font-weight: 700;
         text-align: center;
-        color: #2c3e50;
+        color: #fff; /* Corregido a blanco */
         font-family: 'Playfair Display', serif; /* Fuente más elegante */
     }
 
@@ -54,8 +54,8 @@
     }
 
     .cover-image-vogue {
-        flex: 0.6;
-        margin-right: 30px;
+        flex: 0.55; /* Reduje un poco el espacio de la imagen */
+        margin-right: 4%; /* Aumenté el margen derecho para mover el texto */
     }
 
     .cover-image-vogue img {
@@ -68,13 +68,17 @@
     }
 
     .cover-text-vogue {
-        flex: 0.4;
-        text-align: left;
+        flex: 0.45; /* Aumenté un poco el espacio del texto */
+        text-align: left; /* Revertí a la izquierda para controlar la alineación */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
     }
 
     .title-vogue {
         font-family: 'Playfair Display', serif; /* Fuente más elegante */
-        font-size: 2.2em;
+        font-size: 2.0em; /* Reduje un poco el tamaño */
         line-height: 1.2;
         color: #000;
         margin-top: 0;
@@ -88,7 +92,7 @@
 
     .excerpt-vogue {
         font-family: 'Arial', sans-serif;
-        font-size: 1em;
+        font-size: 0.9em; /* Reduje un poco el tamaño */
         color: #333;
         line-height: 1.4;
         margin-top: 0.5em;
