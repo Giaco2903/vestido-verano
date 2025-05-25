@@ -161,7 +161,7 @@
 
         .dress-section {
             display: flex;
-            align-items: center; /* Center items vertically */
+            align-items: flex-start; /* Changed from center to flex-start */
             gap: 2em;
             padding: 15px;
             box-sizing: border-box;
@@ -169,13 +169,13 @@
 
         .dress-image-container {
             flex-shrink: 0;
-            width: 585px; /* Increased width by 30% of 450 */
+            width: 585px; /* Increased width */
             text-align: left;
             margin-bottom: 0;
             display: flex;
             flex-direction: column;
             justify-content: flex-start; /* Align title to the top */
-            height: 806px; /* Increased height by 30% of 620 */
+            height: auto; /* Changed to auto to fit content */
         }
 
         .dress-image-container h3 {
@@ -200,9 +200,9 @@
 
         .dress-image-container .dress-image { /* Apply to all images in this container */
             display: block;
-            width: 585px; /* Increased width by 30% of 450 */
-            height: 806px; /* Increased height by 30% of 620 */
-            object-fit: cover; /* Ensure the image covers the container (may crop) */
+            width: 585px; /* Increased width */
+            height: auto; /* Changed to auto */
+            object-fit: contain; /* Changed to contain */
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
             margin-bottom: 0; /* Remove default bottom margin */
@@ -308,7 +308,7 @@
         /* Specific adjustment for desktop layout */
         @media (min-width: 768px) {
             .dress-section {
-                align-items: center; /* Center items vertically */
+                align-items: flex-start; /* Changed to flex-start */
                 gap: 2em;
                 padding: 15px;
                 box-sizing: border-box;
@@ -316,13 +316,13 @@
 
             .dress-image-container {
                 flex-shrink: 0;
-                width: 585px; /* Increased width by 30% */
+                width: 585px; /* Increased width */
                 text-align: left;
                 margin-bottom: 0;
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-start; /* Align title to the top */
-                height: 806px; /* Increased height by 30% */
+                height: auto; /* Changed to auto */
             }
 
             .dress-image-container h3 {
@@ -347,9 +347,9 @@
 
             .dress-image-container .dress-image { /* Apply to all images in this container */
                 display: block;
-                width: 585px; /* Increased width by 30% */
-                height: 806px; /* Increased height by 30% */
-                object-fit: cover; /* Ensure the image covers the container (may crop) */
+                width: 585px; /* Increased width */
+                height: auto; /* Changed to auto */
+                object-fit: contain; /* Changed to contain */
                 border-radius: 8px;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
                 margin-bottom: 0; /* Remove default bottom margin */
