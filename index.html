@@ -5,218 +5,226 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tu Verano de Estilo: Secretos y Vestidos que Conquistan</title>
- <style>
-    body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 1.9;
-        margin: 0;
-        background-color: #f9f9f9;
-        color: #333;
-    }
+    <link href="https://fonts.cdnfonts.com/css/playfair-display" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.9;
+            margin: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
 
-    /* Estilos para el encabezado */
-    .site-header {
-        background-color: #222;
-        color: #fff;
-        padding: 20px;
-        text-align: center;
-        width: 100%;
-        z-index: 100;
-    }
-
-    .site-header h1 {
-        margin: 0;
-        font-size: 3.2em;
-        font-weight: 700;
-        text-align: center;
-        color: #fff; /* Corregido a blanco */
-        font-family: 'Playfair Display', serif; /* Fuente más elegante */
-    }
-
-    .container {
-        padding: 20px 50px;
-    }
-
-    header p {
-        text-align: left;
-        color: #555;
-        margin-bottom: 1.6em;
-    }
-
-    /* Estilos para la portada tipo Vogue */
-    .cover-vogue-custom {
-        display: flex;
-        width: 100%;
-        align-items: center;
-        padding: 30px;
-        box-sizing: border-box;
-        margin-bottom: 2em;
-    }
-
-    .cover-image-vogue {
-        flex: 0.55; /* Reduje un poco el espacio de la imagen */
-        margin-right: 4%; /* Aumenté el margen derecho para mover el texto */
-    }
-
-    .cover-image-vogue img {
-        display: block;
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .cover-text-vogue {
-        flex: 0.45; /* Aumenté un poco el espacio del texto */
-        text-align: left; /* Revertí a la izquierda para controlar la alineación */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 100%;
-    }
-
-    .title-vogue {
-        font-family: 'Playfair Display', serif; /* Fuente más elegante */
-        font-size: 2.0em; /* Reduje un poco el tamaño */
-        line-height: 1.2;
-        color: #000;
-        margin-top: 0;
-        margin-bottom: 0.3em;
-        font-weight: normal;
-    }
-
-    .title-vogue strong {
-        font-weight: bold;
-    }
-
-    .excerpt-vogue {
-        font-family: 'Arial', sans-serif;
-        font-size: 0.9em; /* Reduje un poco el tamaño */
-        color: #333;
-        line-height: 1.4;
-        margin-top: 0.5em;
-        text-align: left;
-    }
-
-    /* Estilos para las imágenes de los vestidos */
-    .dress-image {
-        max-width: 150px;
-        height: auto;
-        display: block;
-        margin: 1em auto; /* Centrar horizontalmente y añadir margen vertical */
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    }
-
-    /* Resto de estilos de tu página */
-    header h1 {
-        font-size: 3.2em;
-        margin-bottom: 0.9em;
-        font-weight: 700;
-        text-align: center;
-        color: #2c3e50;
-        font-family: 'Playfair Display', serif; /* Fuente más elegante */
-    }
-
-    h2 {
-        font-size: 2.4em;
-        margin-top: 1.8em;
-        margin-bottom: 1.2em;
-        font-weight: 600;
-        color: black;
-        text-align: center;
-    }
-
-    h3 {
-        font-size: 1.8em;
-        margin-top: 1.2em;
-        margin-bottom: 1em;
-        font-weight: 500;
-        color: #2c3e50;
-        text-align: center; /* Centrar los títulos de las secciones de vestidos */
-    }
-
-    p {
-        margin-bottom: 1.6em;
-        text-align: justify;
-        color: #555;
-    }
-
-    ul {
-        list-style: none;
-        padding: 0;
-    }
-
-    li {
-        margin-bottom: 0.9em;
-        color: #555;
-        text-align: left;
-    }
-
-    .product-link {
-        display: block;
-        width: 85%;
-        max-width: 400px;
-        margin: 2em auto;
-        padding: 18px 30px;
-        background-color: #3498db;
-        color: white;
-        text-decoration: none;
-        border-radius: 35px;
-        text-align: center;
-        font-weight: bold;
-        letter-spacing: 1.3px;
-        box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1);
-        transition: background-color 0.3s ease;
-    }
-
-    .product-link:hover {
-        background-color: #2980b9;
-    }
-
-    .summer-secrets {
-        margin-top: 2.5em;
-        padding: 25px;
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
-    }
-
-    /* ... (resto de tus estilos) ... */
-
-    .site-footer {
-        background-color: #222;
-        color: #fff;
-        padding: 20px;
-        text-align: center;
-        width: 100%;
-        font-size: 0.9em;
-        z-index: 100;
-    }
-
-    /* Ajustes para pantallas más pequeñas */
-    @media (max-width: 768px) {
-        .cover-vogue-custom {
-            flex-direction: column;
+        /* Estilos para el encabezado */
+        .site-header {
+            background-color: #222;
+            color: #fff;
+            padding: 20px;
             text-align: center;
+            width: 100%;
+            z-index: 100;
+        }
+
+        .site-header h1 {
+            margin: 0;
+            font-size: 2.8em; /* Reduje el tamaño del título principal */
+            font-weight: 700;
+            text-align: center;
+            color: #fff;
+            font-family: 'Playfair Display', serif; /* Fuente más elegante */
+        }
+
+        .container {
+            padding: 20px 50px;
+        }
+
+        header p {
+            text-align: left;
+            color: #555;
+            margin-bottom: 1.6em;
+        }
+
+        /* Estilos para la portada tipo Vogue */
+        .cover-vogue-custom {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            padding: 30px;
+            box-sizing: border-box;
+            margin-bottom: 2em;
         }
 
         .cover-image-vogue {
-            margin-right: 0;
-            margin-bottom: 20px;
-            width: 80%;
+            flex: 0.55; /* Reduje un poco el espacio de la imagen */
+            margin-right: 4%; /* Aumenté el margen derecho para mover el texto */
+        }
+
+        .cover-image-vogue img {
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .cover-text-vogue {
-            text-align: center;
+            flex: 0.45; /* Aumenté un poco el espacio del texto */
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
         }
 
         .title-vogue {
-            font-size: 1.8em;
+            font-family: 'Playfair Display', serif; /* Fuente más elegante */
+            font-size: 2.0em;
+            line-height: 1.2;
+            color: #000;
+            margin-top: 0;
+            margin-bottom: 0.3em;
+            font-weight: normal;
         }
-    }
-</style>
+
+        .title-vogue strong {
+            font-weight: bold;
+        }
+
+        .excerpt-vogue {
+            font-family: 'Arial', sans-serif;
+            font-size: 0.9em;
+            color: #333;
+            line-height: 1.4;
+            margin-top: 0.5em;
+            text-align: left;
+        }
+
+        .cover-subheadline {
+            font-size: 1em;
+            color: #555;
+            margin-bottom: 0.5em;
+            font-style: italic;
+        }
+
+        /* Estilos para las imágenes de los vestidos */
+        .dress-image {
+            max-width: 150px;
+            height: auto;
+            display: block;
+            margin: 1em auto; /* Centrar horizontalmente y añadir margen vertical */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Resto de estilos de tu página */
+        header h1 {
+            font-size: 3.2em;
+            margin-bottom: 0.9em;
+            font-weight: 700;
+            text-align: center;
+            color: #2c3e50;
+            font-family: 'Playfair Display', serif; /* Fuente más elegante */
+        }
+
+        h2 {
+            font-size: 2.4em;
+            margin-top: 1.8em;
+            margin-bottom: 1.2em;
+            font-weight: 600;
+            color: black;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 1.8em;
+            margin-top: 1.2em;
+            margin-bottom: 1em;
+            font-weight: 500;
+            color: #2c3e50;
+            text-align: center; /* Centrar los títulos de las secciones de vestidos */
+        }
+
+        p {
+            margin-bottom: 1.6em;
+            text-align: justify;
+            color: #555;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 0.9em;
+            color: #555;
+            text-align: left;
+        }
+
+        .product-link {
+            display: block;
+            width: 85%;
+            max-width: 400px;
+            margin: 2em auto;
+            padding: 18px 30px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 35px;
+            text-align: center;
+            font-weight: bold;
+            letter-spacing: 1.3px;
+            box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .product-link:hover {
+            background-color: #2980b9;
+        }
+
+        .summer-secrets {
+            margin-top: 2.5em;
+            padding: 25px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        /* ... (resto de tus estilos) ... */
+
+        .site-footer {
+            background-color: #222;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            font-size: 0.9em;
+            z-index: 100;
+        }
+
+        /* Ajustes para pantallas más pequeñas */
+        @media (max-width: 768px) {
+            .cover-vogue-custom {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .cover-image-vogue {
+                margin-right: 0;
+                margin-bottom: 20px;
+                width: 80%;
+            }
+
+            .cover-text-vogue {
+                text-align: center;
+            }
+
+            .title-vogue {
+                font-size: 1.8em;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -230,8 +238,9 @@
                 <img src="Triptico_portada.jpeg" alt="Tríptico de vestidos de verano">
             </div>
             <div class="cover-text-vogue">
-                <h1 class="title-vogue">Desbloquea tu Verano de Impacto: Los Vestidos que Todas Querrán</h1>
-                </div>
+                <p class="cover-subheadline">Los imprescindibles de la temporada</p>
+                <h1 class="title-vogue"><strong>Desbloquea tu Verano de Impacto:</strong> Los Vestidos que Todas Querrán</h1>
+            </div>
         </div>
         <header>
             <p>¿Lista para descubrir los secretos de estilo que harán de este verano tu temporada más fabulosa? Sumérgete con
