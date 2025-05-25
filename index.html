@@ -328,9 +328,13 @@
                 text-align: left;
             }
 
-            /* Increase image size for Midi Chic (assuming it's the first dress section) */
+            /* Increase image size for Midi Chic (first) and Túnica Azul (second) */
             .dress-section:nth-child(1) .dress-image-container .dress-image {
-                max-width: 350px; /* Adjust this value to your desired size */
+                max-width: 370px; /* Slightly larger for Midi Chic */
+            }
+
+            .dress-section:nth-child(2) .dress-image-container .dress-image {
+                max-width: 370px; /* Same size for Túnica Azul for now */
             }
 
             .dress-info {
