@@ -2,154 +2,6 @@
 <html lang="es">
 
 <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.9;
-            margin: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-
-        /* Ajustes para pantallas más pequeñas (móviles) */
-        @media (max-width: 600px) {
-            .container {
-                padding: 15px;
-            }
-
-            .cover-vogue-custom {
-                padding: 20px;
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .cover-image-vogue {
-                margin-right: 0;
-                margin-bottom: 15px;
-                width: 100%;
-            }
-
-            .cover-text-vogue {
-                text-align: center;
-            }
-
-            .title-vogue {
-                font-size: 1.6em;
-            }
-
-            .dress-section {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .dress-image-container {
-                text-align: center;
-                margin-bottom: 1.5em;
-                width: 100%;
-            }
-
-            .dress-info h3 {
-                text-align: center;
-                margin-top: 0.5em;
-            }
-
-            .dress-image {
-                max-width: 80%;
-                height: auto;
-                display: block;
-                margin: 0 auto 1.5em;
-            }
-
-            .dress-info {
-                width: 100%;
-                text-align: center;
-            }
-        }
-
-        /* Estilos del encabezado */
-        .site-header {
-            background-color: #222;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-            width: 100%;
-            z-index: 100;
-        }
-
-        .site-header h1 {
-            margin: 0;
-            font-size: 2.4em;
-            font-weight: 400;
-            text-align: center;
-            color: #fff;
-            font-family: 'Playfair Display', serif;
-        }
-
-        .container {
-            padding: 20px 50px;
-        }
-
-        header p {
-            text-align: left;
-            color: #555;
-            margin-bottom: 1.6em;
-        }
-
-        /* Estilos de la portada Vogue */
-        .cover-vogue-custom {
-            display: flex;
-            width: 100%;
-            align-items: center;
-            padding: 30px;
-            box-sizing: border-box;
-            margin-bottom: 2em;
-        }
-
-        .cover-image-vogue {
-            flex: 0.6;
-            margin-right: 3%;
-        }
-
-        .cover-image-vogue img {
-            display: block;
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .cover-text-vogue {
-            flex: 0.4;
-            text-align: left;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            height: 100%;
-        }
-
-        .cover-overline {
-            font-family: 'Arial', sans-serif;
-            font-size: 0.9em;
-            color: #777;
-            margin-bottom: 0.3em;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-        }
-
-        .title-vogue {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.1em;
-            line-height: 1.1;
-            color: #000;
-            margin-top: 0;
-            margin-bottom: 0.5em;
-            font-weight: bold;
-        }
-
-        .title-vogue span {
-            font-weight: normal;
-        }
-
         /* Estilos para la sección de vestidos */
         .dress-item {
             margin-bottom: 3em;
@@ -157,39 +9,34 @@
 
         .dress-section {
             display: flex;
-            align-items: flex-start; /* Align items to the start on the cross axis */
+            align-items: flex-start; /* Alinea los elementos al inicio en el eje transversal */
             gap: 2em;
             padding: 15px;
             box-sizing: border-box;
+            flex-direction: column; /* Para que en móviles se apilen verticalmente */
         }
 
         .dress-image-container {
-            flex-shrink: 0; /* Don't allow image container to shrink */
-            width: 300px; /* Fixed width for the image area */
             text-align: left;
-            margin-bottom: 0;
-            display: flex; /* Enable flexbox for vertical alignment */
-            flex-direction: column; /* Stack items vertically */
-            justify-content: flex-start; /* Align title to the top */
+            margin-bottom: 1em;
         }
 
         .dress-image-container h3 {
             margin-top: 0;
-            margin-bottom: 0.5em; /* Add some space below the title */
+            margin-bottom: 0.5em;
             text-align: left;
         }
 
         .dress-info {
-            flex-grow: 1; /* Allow text info to take up remaining space */
             display: flex;
             flex-direction: column;
-            justify-content: flex-start; /* Align text to the top */
-            align-items: flex-start; /* Align text content to the start */
+            justify-content: flex-start; /* Asegura que el contenido empiece desde arriba */
+            align-items: flex-start;
         }
 
         .dress-info h3 {
             text-align: left;
-            margin-top: 0; /* Ensure title starts at the top of the info block */
+            margin-top: 0;
             margin-bottom: 0.5em;
         }
 
@@ -302,26 +149,28 @@
         /* Specific adjustment for desktop layout */
         @media (min-width: 768px) {
             .dress-section {
-                align-items: flex-start; /* Ensure top alignment of image and text block */
-            }
-
-            .dress-info {
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-start; /* Align content to the start vertically */
-                align-items: flex-start; /* Ensure content within text block starts at the top */
+                flex-direction: row; /* Volver a la disposición horizontal en escritorio */
+                align-items: flex-start; /* Asegurar la alineación superior entre imagen y texto */
             }
 
             .dress-image-container {
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-start;
+                flex-shrink: 0;
+                width: 300px; /* Ancho fijo para la imagen */
+                margin-right: 2em; /* Espacio a la derecha de la imagen */
+                margin-bottom: 0; /* Eliminar margen inferior en escritorio */
             }
 
-            .dress-image-container h3 {
-                margin-top: 0;
-                margin-bottom: 0.5em;
-                text-align: left;
+            .dress-info {
+                flex-grow: 1;
+                justify-content: flex-start; /* Asegurar que el texto empiece desde arriba */
+            }
+
+            .dress-info h3 {
+                margin-top: 0; /* Eliminar margen superior innecesario en escritorio */
+            }
+
+            .dress-image {
+                max-width: 100%; /* La imagen ocupa el ancho de su contenedor */
             }
         }
     </style>
