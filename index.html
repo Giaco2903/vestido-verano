@@ -197,10 +197,11 @@
             margin-bottom: 0.5em;
         }
 
-        .dress-image {
+        .dress-image-container .dress-image { /* Apply to all images in this container */
             display: block;
-            max-width: 100%;
-            height: auto;
+            width: 400px; /* Set a fixed width */
+            height: 550px; /* Set a fixed height */
+            object-fit: cover; /* Ensure the image covers the container without distortion (may crop) */
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
             margin-bottom: 1em;
@@ -314,12 +315,13 @@
 
             .dress-image-container {
                 flex-shrink: 0;
-                width: 300px;
+                width: 400px; /* Match image width */
                 text-align: left;
                 margin-bottom: 0;
                 display: flex;
                 flex-direction: column;
-                justify-content: center; /* Center content vertically */
+                justify-content: flex-start; /* Align title to the top */
+                height: 550px; /* Match image height */
             }
 
             .dress-image-container h3 {
@@ -344,11 +346,12 @@
 
             .dress-image-container .dress-image { /* Apply to all images in this container */
                 display: block;
-                max-width: 450px; /* Use the same max-width as the blue tunic image */
-                height: auto;
+                width: 400px; /* Set a fixed width */
+                height: 550px; /* Set a fixed height */
+                object-fit: cover; /* Ensure the image covers the container (may crop) */
                 border-radius: 8px;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-                margin-bottom: 1em;
+                margin-bottom: 0; /* Remove default bottom margin */
             }
         }
     </style>
