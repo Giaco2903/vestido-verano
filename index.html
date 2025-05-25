@@ -168,13 +168,22 @@
             width: 300px; /* Fixed width for the image area */
             text-align: left;
             margin-bottom: 0;
+            display: flex; /* Enable flexbox for vertical alignment */
+            flex-direction: column; /* Stack items vertically */
+            justify-content: flex-start; /* Align title to the top */
+        }
+
+        .dress-image-container h3 {
+            margin-top: 0;
+            margin-bottom: 0.5em; /* Add some space below the title */
+            text-align: left;
         }
 
         .dress-info {
             flex-grow: 1; /* Allow text info to take up remaining space */
             display: flex;
             flex-direction: column;
-            justify-content: flex-start; /* Align content to the start vertically */
+            justify-content: flex-start; /* Align text to the top */
             align-items: flex-start; /* Align text content to the start */
         }
 
@@ -303,9 +312,16 @@
                 align-items: flex-start; /* Ensure content within text block starts at the top */
             }
 
+            .dress-image-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+            }
+
             .dress-image-container h3 {
-                margin-top: 0; /* Align the title next to the image to the very top */
-                text-align: left; /* Make sure the title is left-aligned */
+                margin-top: 0;
+                margin-bottom: 0.5em;
+                text-align: left;
             }
         }
     </style>
