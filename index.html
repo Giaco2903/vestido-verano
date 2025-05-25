@@ -329,13 +329,32 @@
             }
 
             /* Adjust image sizes for desktop */
-            /* Assuming "Midi Chic" is the first and "Bohemio.jpg" (Túnica Azul) is the second */
             .dress-section:nth-child(1) .dress-image-container .dress-image {
-                max-width: 330px; /* Make "Lino" smaller */
+                max-width: 330px; /* Smaller for the first dress (Lino) */
+            }
+
+            .dress-section:nth-child(2) {
+                align-items: flex-start; /* Ensure alignment of items in this section */
+            }
+
+            .dress-section:nth-child(2) .dress-image-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start; /* Align title to the top */
+            }
+
+            .dress-section:nth-child(2) .dress-info {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start; /* Align text to the top */
+            }
+
+            .dress-section:nth-child(2) .dress-image-container h3 {
+                margin-top: 0; /* Align title to the top of the container */
             }
 
             .dress-section:nth-child(2) .dress-image-container .dress-image {
-                max-width: 390px; /* Make "Bohemio.jpg" larger */
+                max-width: 390px; /* Larger for Bohemio.jpg */
             }
 
             .dress-info {
