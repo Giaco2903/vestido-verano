@@ -169,43 +169,37 @@
             .dress-section {
                 flex-direction: row;
                 align-items: flex-start; /* Alineación superior */
-                justify-content: center;
-                gap: 3em;
+                gap: 2em; /* Añadimos un poco de espacio entre imagen y texto */
             }
 
             .dress-image-container {
-                flex: 0 0 350px;
-                margin-bottom: 0;
+                flex: 0 0 300px; /* Ancho fijo para la imagen */
                 text-align: left;
+                margin-bottom: 0;
             }
 
             .dress-info {
-                flex: 1;
-                padding-left: 0;
+                flex: 1; /* El texto ocupa el espacio restante */
+                padding-left: 0; /* Removemos el padding que podría afectar la alineación */
                 display: flex;
                 flex-direction: column;
-                align-items: flex-start; /* Alineación superior del texto */
+                align-items: flex-start; /* Aseguramos la alineación superior del contenido */
             }
 
             .dress-info h3 {
-                text-align: left;
-                margin-top: 0;
+                text-align: left; /* Título alineado a la izquierda */
+                margin-top: 0; /* Aseguramos que el título empiece desde arriba */
+                margin-bottom: 0.5em; /* Un poco de espacio debajo del título */
             }
 
             .dress-image {
                 max-width: 100%;
                 height: auto;
-                margin-bottom: 1em;
             }
 
-            .dress-image.adjust-height {
-                /* Vamos a dejar que la altura se ajuste al contenedor */
-                max-height: none; /* Removemos la altura máxima anterior */
-                object-fit: contain; /* Mantenemos el aspect ratio */
-            }
-
-            .dress-info .dress-description {
-                margin-top: 0.2em;
+            .product-link {
+                width: auto; /* El botón ocupa el ancho necesario */
+                margin-left: 0;
             }
         }
 
