@@ -3,11 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <met<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tu Verano de Estilo: Secretos y Vestidos que Conquistan</title>
     <link href="https://fonts.cdnfonts.com/css/playfair-display" rel="stylesheet">
@@ -137,7 +132,7 @@
             display: flex;
             flex-direction: column; /* Apilar imagen y texto en móviles por defecto */
             align-items: center; /* Centrar elementos horizontalmente en móvil */
-            margin-bottom: 3em; /* Más espacio entre cada vestido */
+            margin-bottom: 4em; /* Más espacio entre cada vestido */
             padding: 15px; /* Añadir un poco de padding a la sección general del vestido */
             box-sizing: border-box; /* Asegurar que el padding no aumente el ancho */
         }
@@ -148,17 +143,26 @@
             width: 100%; /* Asegurar que el contenedor de la imagen ocupe todo el ancho disponible */
         }
 
+        .dress-info {
+            width: 100%; /* Asegurar que la info ocupe todo el ancho en móvil */
+        }
+
         .dress-info h3 {
             text-align: center; /* Centrar el título del vestido en móviles */
+            margin-top: 0.5em; /* Reducir el margen superior del título para alinearlo mejor */
         }
 
         .dress-image {
             max-width: 200px; /* Aumentar el tamaño de la imagen en móvil para que se vea mejor */
             height: auto;
             display: block;
-            margin: 0 auto; /* Centrar la imagen dentro de su contenedor */
+            margin: 0 auto 1.5em; /* Centrar la imagen y añadir margen inferior */
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .dress-info .dress-description {
+            margin-top: 0.5em; /* Reducir el margen superior de la descripción */
         }
 
         /* Estilos para pantallas más grandes (desktop) */
@@ -168,27 +172,38 @@
                 align-items: flex-start; /* Alinear los elementos al inicio (arriba) */
                 justify-content: center; /* Centrar la sección de vestido si hay espacio */
                 gap: 3em; /* Espacio entre la imagen y la información del vestido */
-                margin-bottom: 4em; /* Más espacio entre cada vestido en desktop */
+                margin-bottom: 5em; /* Más espacio entre cada vestido en desktop */
             }
 
             .dress-image-container {
-                flex: 0 0 300px; /* Ancho fijo para la imagen en desktop */
+                flex: 0 0 350px; /* Ancho fijo para la imagen en desktop */
                 margin-bottom: 0; /* Eliminar margen inferior cuando está lado a lado */
                 text-align: left; /* Alinear la imagen a la izquierda */
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start; /* Asegurar la alineación del contenido interno */
             }
 
             .dress-info {
                 flex: 1; /* La información del vestido ocupa el espacio restante */
                 padding-left: 0; /* Eliminar el padding izquierdo si ya lo tenía */
+                display: flex;
+                flex-direction: column;
             }
 
             .dress-info h3 {
                 text-align: left; /* Título alineado a la izquierda en pantallas grandes */
+                margin-top: 0; /* Asegurar que el título esté alineado con la parte superior */
             }
 
             .dress-image {
                 max-width: 100%; /* La imagen ocupa el 100% de su contenedor fijo */
                 height: auto;
+                margin-bottom: 1em; /* Añadir un poco de margen inferior a la imagen en desktop */
+            }
+
+            .dress-info .dress-description {
+                margin-top: 0.5em;
             }
         }
 
@@ -289,7 +304,6 @@
         }
     </style>
 </head>
-
 
 <body>
     <div class="site-header">
