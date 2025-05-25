@@ -161,7 +161,7 @@
 
         .dress-section {
             display: flex;
-            align-items: center; /* Changed from flex-start to center */
+            align-items: center; /* Center items vertically */
             gap: 2em;
             padding: 15px;
             box-sizing: border-box;
@@ -306,7 +306,7 @@
         /* Specific adjustment for desktop layout */
         @media (min-width: 768px) {
             .dress-section {
-                align-items: center; /* Changed this to center */
+                align-items: center; /* Center items vertically */
                 gap: 2em;
                 padding: 15px;
                 box-sizing: border-box;
@@ -342,63 +342,13 @@
                 margin-bottom: 0.5em;
             }
 
-            .dress-image {
+            .dress-image-container .dress-image { /* Apply to all images in this container */
                 display: block;
-                max-width: 100%;
+                max-width: 450px; /* Use the same max-width as the blue tunic image */
                 height: auto;
                 border-radius: 8px;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
                 margin-bottom: 1em;
-            }
-
-            .dress-info .dress-description {
-                margin-bottom: 1em;
-            }
-
-            .combine-with {
-                margin-bottom: 0.7em;
-                font-style: italic;
-                color: #777;
-            }
-
-            .product-link {
-                display: inline-block;
-                padding: 15px 30px;
-                background-color: #3498db;
-                color: white;
-                text-decoration: none;
-                border-radius: 35px;
-                font-weight: bold;
-                letter-spacing: 1.3px;
-                box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1);
-                transition: background-color 0.3s ease;
-                margin-top: 1em;
-            }
-
-            .product-link:hover {
-                background-color: #2980b9;
-            }
-
-            .testimonial {
-                margin-top: 1em;
-                padding: 10px;
-                background-color: #f0f0f0;
-                border-radius: 5px;
-                font-size: 0.9em;
-                color: #555;
-            }
-
-            .testimonial cite {
-                font-style: italic;
-                display: block;
-                text-align: right;
-                color: #777;
-            }
-
-            /* Increase size of the specific image */
-            img[src="6122W6xHn0L._AC_SY879_.jpg"] {
-                max-width: 450px;
-                height: auto;
             }
         }
     </style>
