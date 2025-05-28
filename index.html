@@ -343,17 +343,20 @@
 }
 
 /* Estilos específicos para el segundo dress-rectangle (Maxi Bohemio) */
+/* Estilos específicos para el primer dress-rectangle (Maxi Bohemio) */
 .dress-rectangle:nth-child(1) .dress-images-grid {
+    display: flex; /* Asegúrate de que sea flex para el gap */
     gap: 0.5em; /* Reducimos el espacio entre las imágenes */
+    margin-bottom: 1em; /* Añade un margen inferior si lo necesitas */
 }
 
 .image-wrapper {
     flex: 1;
-    height: 400px; /* Establece una altura fija para ambos contenedores (ajusta si es necesario) */
+    height: 400px; /* Establece una altura fija para ambos contenedores (afecta a todos por defecto) */
     overflow: hidden; /* Asegura que la imagen no se desborde */
 }
 
-/* Estilos específicos para el segundo dress-rectangle (Maxi Bohemio) */
+/* Estilos específicos para el primer dress-rectangle (Maxi Bohemio) */
 .dress-rectangle:nth-child(1) .image-wrapper {
     height: 350px; /* Ajustamos la altura para el Maxi Bohemio */
 }
