@@ -218,24 +218,6 @@
             color: #777;
         }
 
-        .product-link {
-            display: inline-block;
-            padding: 15px 30px;
-            background-color: #3498db;
-            color: white;
-            text-decoration: none;
-            border-radius: 35px;
-            font-weight: bold;
-            letter-spacing: 1.3px;
-            box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s ease;
-            margin-top: 1em;
-        }
-
-        .product-link:hover {
-            background-color: #2980b9;
-        }
-
         .testimonial {
             margin-top: 1em;
             padding: 10px;
@@ -385,21 +367,22 @@
 }
 
 .product-link {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ff6b6b;
+    display: block; /* Cambiado a block para centrar con márgenes auto */
+    padding: 15px 30px; /* Tomado de la primera regla */
+    background-color: #ff6b6b; /* Tomado de la segunda regla (o puedes usar #3498db de la primera) */
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 35px; /* Tomado de la primera regla */
     font-weight: bold;
+    letter-spacing: 1.3px; /* Tomado de la primera regla */
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1); /* Tomado de la primera regla */
     transition: background-color 0.3s ease;
     margin-top: 1em;
- text-align: center; /* Centra el texto dentro del botón */
+    text-align: center;
     margin-left: auto;
-    margin-right: auto; /* Centra el botón horizontalmente */
-    width: fit-content; /* El ancho se ajusta al contenido */
+    margin-right: auto;
+    width: fit-content;
 }
-
 .product-link:hover {
     background-color: #e65a5a;
 }
