@@ -555,80 +555,75 @@
 </body>
 
         <style>
-         @media (min-width: 768px) {
-            /* Estilos para la nueva estructura de la sección de vestidos */
-            .dress-item {
+        @media (min-width: 768px) {
+    /* Estilos para la nueva estructura de la sección de vestidos */
+    .dress-item {
         display: flex; /* Alinea imagen y texto en fila */
         margin-bottom: 3em;
         align-items: flex-start; /* Alinea la parte superior de los items */
     }
-            .dress-image-container {
-                text-align: center;
-                margin-bottom: 1em;
-            }
+    .dress-image-container {
+        flex-shrink: 0; /* Evita que la imagen se encoja */
+        width: auto; /* Ancho automático basado en la imagen */
+        margin-right: 2em; /* Espacio entre la imagen y el texto */
+        text-align: left; /* Alinea la imagen a la izquierda */
+    }
 
-            .dress-info h3 {
-                text-align: center; /* Centrar el título del vestido en móviles */
-            }
+    .dress-info h3 {
+        text-align: left; /* Alinea el título a la izquierda en escritorio */
+    }
 
-            .dress-image {
-                max-width: 100%; /* La imagen ocupa todo el ancho en móviles */
-                height: auto;
-                border-radius: 8px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-            }
+    .dress-image {
+        max-width: 300px; /* Tamaño máximo de la imagen en pantallas grandes */
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    }
 
-            .product-link {
-                display: inline-block;
-                padding: 15px 30px;
-                background-color: #ff6b6b;
-                color: white;
-                text-decoration: none;
-                border-radius: 5px;
-                text-align: center;
-                font-weight: bold;
-                letter-spacing: 1.2px;
-                box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
-                transition: background-color 0.3s ease;
-                margin: 1.5em auto;
-                width: auto;
-            }
+    .product-link {
+        display: inline-block;
+        padding: 15px 30px;
+        background-color: #ff6b6b;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 1.2px;
+        box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease;
+        margin-top: 1.5em; /* Ajusta el margen superior */
+        width: auto;
+    }
 
-            .product-link:hover {
-                background-color: #e65a5a;
-            }
+    .product-link:hover {
+        background-color: #e65a5a;
+    }
 
-            /* Estilos para pantallas más grandes */
-                .dress-section {
-                    flex-direction: column; 
-                    align-items: center;
-                }
+    /* Modificaciones para la disposición en escritorio */
+    .dress-section {
+        display: flex; /* Habilitar flex para alinear imagen y texto */
+        flex-direction: row; /* Colocar imagen y texto en fila */
+        align-items: flex-start; /* Alinear al inicio (arriba) */
+        gap: 2em; /* Espacio entre la imagen y el texto */
+        margin-bottom: 2em; /* Espacio entre cada sección de vestido */
+    }
 
-                .dress-image-container {
-                    flex: 0.5;
-                    text-align: left;
-                    margin-bottom: 0; /* Eliminar margen inferior en pantallas grandes */
-                }
+    .dress-image-container {
+        flex: none; /* No aplicar flex grow/shrink aquí */
+        width: auto; /* Ancho automático */
+        margin-right: 2em;
+        margin-bottom: 0; /* Eliminar margen inferior */
+    }
 
-                .dress-info {
-                    flex: 0.5;
-                    padding-left: 2em; /* Espacio entre imagen y texto */
-                }
-
-                .dress-info h3 {
-                    text-align: left; /* Título alineado a la izquierda en pantallas grandes */
-                }
-
-                .dress-image {
-                    max-width: 300px; /* Tamaño máximo de la imagen en pantallas grandes */
-                }
-
-                .product-link {
-                    width: auto; /* El botón ocupa el ancho necesario */
-                    margin-left: 0; /* Eliminar margen izquierdo */
-                }
-            }
-         
+    .dress-info {
+        flex: 1; /* El texto ocupa el espacio restante */
+        padding-left: 0; /* Eliminar padding izquierdo */
+        display: flex;
+        flex-direction: column; /* Alinear el contenido del texto verticalmente */
+        justify-content: flex-start; /* Empezar el texto desde arriba */
+    }
+}
         </style>
             
 
