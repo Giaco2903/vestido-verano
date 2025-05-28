@@ -362,21 +362,19 @@
     display: flex;
     gap: 1em; /* Espacio entre las dos imágenes */
     margin-bottom: 1em;
-  align-items: flex-start; /* Alinea las imágenes en la parte superior */
 }
 
-.dress-image-front,
-.dress-image-back {
-    flex: 1; /* Para que ambas imágenes ocupen el mismo ancho */
- overflow: hidden;
-   max height: 450px; /* Establece una altura fija (ajusta este valor según necesites) */
+.image-wrapper {
+    flex: 1;
+    height: 400px; /* Establece una altura fija para ambos contenedores (ajusta si es necesario) */
+    overflow: hidden; /* Asegura que la imagen no se desborde */
 }
 
-.dress-image-front img,
-.dress-image-back img {
+.image-wrapper img {
     width: 100%;
-    height: auto
+    height: 100%;
     display: block;
+    object-fit: contain; /* La imagen se escala para caber dentro del contenedor */
     border-radius: 4px;
 }
 
@@ -600,10 +598,10 @@
           <div class="dress-rectangle">
     <h3>Vestido de Lino Fresco: El Secreto para un Verano Cómodo y Sofisticado</h3>
     <div class="dress-images-grid">
-        <div class="dress-image-front">
+        <div class="image-wrapper">
             <img src="61LqzzSOs3L._AC_SX679_.jpg" alt="Vestido frontal de lino">
         </div>
-        <div class="dress-image-back">
+        <div class="image-wrapper">
             <img src="Vestidolino.jpg" alt="Vestido trasero de lino">
         </div>
     </div>
