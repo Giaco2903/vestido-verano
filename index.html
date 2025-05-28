@@ -368,17 +368,15 @@
 .dress-image-back {
     flex: 1; /* Para que ambas imágenes ocupen el mismo ancho */
  overflow: hidden;
-    height: 300px; /* Establece una altura fija (ajusta este valor según necesites) */
+   max height: 400px; /* Establece una altura fija (ajusta este valor según necesites) */
 }
 
 .dress-image-front img,
 .dress-image-back img {
     width: 100%;
-    height: 100%;
+    height: auto
     display: block;
     border-radius: 4px;
-  object-fit: cover; /* Cubre el contenedor manteniendo la proporción */
-    min-height: 250px; /* Establece una altura mínima común (ajusta este valor) */
 }
 
 .dress-details p {
