@@ -327,6 +327,10 @@
     padding: 1.5em;
     background-color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+    /* Reducir la amplitud del rectángulo */
+    max-width: 700px; /* Ajusta este valor según lo necesites */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .dress-rectangle h3 {
@@ -338,16 +342,18 @@
 
 .dress-images-grid {
     display: flex;
-    gap: 1em; /* Espacio entre las dos imágenes */
-    margin-bottom: 1em;
+    /* Pegar más las imágenes (reducir el gap general) */
+    gap: 0.5em; /* Ajusta este valor según lo necesites */
+    /* Aumentar el espacio entre imágenes y texto */
+    margin-bottom: 1.5em; /* Ajusta este valor según lo necesites */
 }
 
-/* Estilos específicos para el segundo dress-rectangle (Maxi Bohemio) */
 /* Estilos específicos para el primer dress-rectangle (Maxi Bohemio) */
 .dress-rectangle:nth-child(1) .dress-images-grid {
     display: flex; /* Asegúrate de que sea flex para el gap */
-    gap: 0.5em; /* Reducimos el espacio entre las imágenes */
-    margin-bottom: 1em; /* Añade un margen inferior si lo necesitas */
+    /* Pegar más las imágenes del primer vestido aún más */
+    gap: 0.2em; /* Ajusta este valor según lo necesites */
+    margin-bottom: 1.5em; /* Mantiene el espacio con el texto */
 }
 
 .image-wrapper {
@@ -416,8 +422,11 @@
     .dress-images-grid {
         flex-direction: row; /* Las imágenes se muestran lado a lado en escritorio */
     }
+    .dress-rectangle {
+        max-width: 900px; /* Un poco más ancho en escritorio si lo prefieres */
+    }
 }
- @media (max-width: 767px) {
+@media (max-width: 767px) {
     .dress-images-grid {
         flex-direction: column; /* Apila las imágenes verticalmente en móviles */
         gap: 1em; /* Espacio entre las imágenes apiladas */
