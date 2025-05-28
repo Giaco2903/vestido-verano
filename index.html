@@ -417,7 +417,20 @@
         flex-direction: row; /* Las imágenes se muestran lado a lado en escritorio */
     }
 }
- 
+ @media (max-width: 767px) {
+    .dress-images-grid {
+        flex-direction: column; /* Apila las imágenes verticalmente en móviles */
+        gap: 1em; /* Espacio entre las imágenes apiladas */
+    }
+
+    .image-wrapper {
+        height: auto; /* La altura se ajusta al contenido en móviles */
+    }
+
+    .image-wrapper img {
+        height: auto; /* La altura se ajusta proporcionalmente */
+    }
+}
     </style>
 </head>
 
