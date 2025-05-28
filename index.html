@@ -306,21 +306,22 @@
         }
 
         /* Specific adjustment for desktop layout */
-      @media (min-width: 768px) {
-    .dress-section {
-        flex-direction: column; /* Apilar imagen y texto verticalmente también en escritorio */
-        align-items: flex-start; /* Alinear a la izquierda */
-        gap: 1.5em; /* Espacio entre la imagen/título y el texto */
-        margin-bottom: 2em; /* Espacio entre cada sección de vestido */
+     @media (min-width: 768px) {
+    .dress-item {
+        display: flex; /* Alinea imagen y texto en fila */
+        margin-bottom: 3em;
+        align-items: flex-start; /* Alinea la parte superior de los items */
     }
 
     .dress-image-container {
-        text-align: left; /* Alinear la imagen a la izquierda */
-        margin-bottom: 1em; /* Espacio entre la imagen y el texto */
+        flex-shrink: 0;
+        width: auto;
+        margin-right: 2em;
+        text-align: left;
     }
 
     .dress-image {
-        max-width: 400px; /* Ajusta el ancho máximo de la imagen en escritorio */
+        max-width: 300px;
         height: auto;
         display: block;
         border-radius: 8px;
@@ -328,18 +329,23 @@
     }
 
     .dress-info {
-        align-items: flex-start; /* Alinear el texto a la izquierda */
+        flex-grow: 1;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
     }
 
     .dress-info h3 {
         text-align: left;
         margin-top: 0;
-        margin-bottom: 0.5em;
+        margin-bottom: 1em;
     }
 
     .product-link {
         margin-left: 0;
         margin-top: 1em;
+        align-self: flex-start;
     }
 }
     </style>
@@ -551,14 +557,13 @@
 </body>
 
         <style>
+         @media (min-width: 768px) {
             /* Estilos para la nueva estructura de la sección de vestidos */
-            .dress-section {
-                display: flex;
-                flex-direction: column; /* Apilar imagen y texto en móviles */
-                align-items: stretch; /* Ocupar todo el ancho */
-                margin-bottom: 1.5em;
-            }
-
+            .dress-item {
+        display: flex; /* Alinea imagen y texto en fila */
+        margin-bottom: 3em;
+        align-items: flex-start; /* Alinea la parte superior de los items */
+    }
             .dress-image-container {
                 text-align: center;
                 margin-bottom: 1em;
@@ -626,6 +631,7 @@
                     margin-left: 0; /* Eliminar margen izquierdo */
                 }
             }
+         }
         </style>
             
 
