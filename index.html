@@ -629,21 +629,21 @@
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
             }
 
-            .product-link {
-                display: inline-block;
-                padding: 15px 30px;
-                background-color: #ff6b6b;
-                color: white;
-                text-decoration: none;
-                border-radius: 5px;
-                text-align: center;
-                font-weight: bold;
-                letter-spacing: 1.2px;
-                box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
-                transition: background-color 0.3s ease;
-                margin: 1.5em auto;
-                width: auto;
-            }
+           .product-link {
+    display: block; /* Cambiamos a block para permitir el centrado con márgenes auto */
+    padding: 15px 30px;
+    background-color: #ff6b6b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    margin: 1.5em auto; /* Esto centrará el botón horizontalmente */
+    width: fit-content; /* El ancho se ajusta al contenido */
+}
 
             .product-link:hover {
                 background-color: #e65a5a;
