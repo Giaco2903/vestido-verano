@@ -342,6 +342,85 @@
         margin-top: 1em;
     }
 }
+ .dress-rectangle {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    margin-bottom: 2em;
+    padding: 1.5em;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+}
+
+.dress-rectangle h3 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1em;
+    color: #333;
+}
+
+.dress-images-grid {
+    display: flex;
+    gap: 1em; /* Espacio entre las dos imágenes */
+    margin-bottom: 1em;
+}
+
+.dress-image-front,
+.dress-image-back {
+    flex: 1; /* Para que ambas imágenes ocupen el mismo ancho */
+}
+
+.dress-image-front img,
+.dress-image-back img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+.dress-details p {
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 0.8em;
+}
+
+.product-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 1em;
+}
+
+.product-link:hover {
+    background-color: #e65a5a;
+}
+
+.testimonial {
+    margin-top: 1em;
+    font-style: italic;
+    color: #777;
+}
+
+.testimonial cite {
+    display: block;
+    text-align: right;
+    font-style: normal;
+    color: #999;
+    font-size: 0.9em;
+    margin-top: 0.5em;
+}
+
+/* Adaptaciones para pantallas más grandes (opcional) */
+@media (min-width: 768px) {
+    .dress-images-grid {
+        flex-direction: row; /* Las imágenes se muestran lado a lado en escritorio */
+    }
+}
+ 
     </style>
 </head>
 
@@ -515,40 +594,32 @@
                 </div>
                 <div style="border-bottom: 1px solid #eee; margin: 2em 0;"></div>
             </div>
-            <div class="dress-item">
-                <div class="dress-section">
-                    <div class="dress-image-container">
-                        <h3>Vestido de Lino Fresco: El Secreto para un Verano Cómodo y Sofisticado</h3>
-                        <img src="61LqzzSOs3L._AC_SX679_.jpg" alt="Vestido de Lino Fresco" class="dress-image">
-                    </div>
-                    <div class="dress-info">
-                        <div class="dress-description">
-                            <p>Si buscas la perfecta armonía entre confort y elegancia, nuestro <strong>Vestido de Lino Fresco</strong>
-                                es para ti. El lino, con su tacto suave y transpirabilidad, te mantendrá fresca incluso en los días más
-                                cálidos, mientras que su corte sencillo pero favorecedor te asegura un look chic sin esfuerzo. Un básico
-                                imprescindible para un verano lleno de estilo relajado.</p>
-                        </div>
-                        <p class="combine-with"><strong>Ideal para:</strong> Un día de relax, una comida al aire libre o una escapada de
-                            fin de semana.</p>
-                        <p class="combine-with"><strong>Completa tu look con:</strong> Alpargatas para un estilo relajado, o sandalias de
-                            cuero para un toque más elegante. Los accesorios de madera o rafia realzan su encanto natural.</p>
-                        <a href="https://amzn.to/43enfgQ" class="product-link" target="_blank"
-                            rel="noopener noreferrer">¡Siente la frescura del Lino!</a>
-                        <div class="testimonial">
-                            "La calidad del lino es increíble. Un básico imprescindible para el verano."
-                            <cite>- Sofía R.</cite>
-                        </div>
-                        <div class="testimonial">
-                            "Sencillo pero con mucho estilo. Me encanta lo cómodo que es para los días calurosos."
-                            <cite>- Andrea F.</cite>
-                        </div>
-                    </div>
-                </div>
-                <div style="border-bottom: 1px solid #eee; margin: 2em 0;"></div>
+          <div class="dress-rectangle">
+    <h3>Vestido de Lino Fresco: El Secreto para un Verano Cómodo y Sofisticado</h3>
+    <div class="dress-images-grid">
+        <div class="dress-image-front">
+            <img src="61LqzzSOs3L._AC_SX679_.jpg" alt="Vestido frontal de lino">
+        </div>
+        <div class="dress-image-back">
+            <img src="imagen_trasera_lino.jpg" alt="Vestido trasero de lino">
+        </div>
+    </div>
+    <div class="dress-details">
+        <p>Si buscas la perfecta armonía entre confort y elegancia, nuestro <strong>Vestido de Lino Fresco</strong> es para ti. El lino, con su tacto suave y transpirabilidad, te mantendrá fresca incluso en los días más cálidos, mientras que su corte sencillo pero favorecedor te asegura un look chic sin esfuerzo. Un básico imprescindible para un verano lleno de estilo relajado.</p>
+        <p><strong>Ideal para:</strong> Un día de relax, una comida al aire libre o una escapada de fin de semana.</p>
+        <p><strong>Completa tu look con:</strong> Alpargatas para un estilo relajado, o sandalias de cuero para un toque más elegante. Los accesorios de madera o rafia realzan su encanto natural.</p>
+        <a href="https://amzn.to/43enfgQ" class="product-link" target="_blank" rel="noopener noreferrer">¡Siente la frescura del Lino!</a>
+        <div class="testimonial">
+            "La calidad del lino es increíble. Un básico imprescindible para el verano."
+            <cite>- Sofía R.</cite>
+        </div>
+        <div class="testimonial">
+            "Sencillo pero con mucho estilo. Me encanta lo cómodo que es para los días calurosos."
+            <cite>- Andrea F.</cite>
+        </div>
+    </div>
+</div>
             </div>
-     </section>
-   
-</body>
 
         <style>
             /* Estilos para la nueva estructura de la sección de vestidos */
